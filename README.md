@@ -51,19 +51,37 @@ MuJoCo integrates robot, sphere, wheels and liquid coordinates together at 2 ms 
 
 Let $q$ include the rigid-body and two modal coordinates. The implemented native multibody system is described by
 
-$$M(q)\ddot q+b(q,\dot q)=B\tau+J(q)^T f_c+f_{\mathrm{passive}}(q,\dot q).$$
+```math
+M(q)\ddot q+b(q,\dot q)=B\tau+J(q)^T f_c+f_{\mathrm{passive}}(q,\dot q).
+```
 
 Here $b$ includes gravity and velocity-dependent terms; $f_c$ is the native contact/constraint force. This is a description of MuJoCo's assembled equations, not a separately integrated hand-derived BallBot model. Modal springs/dampers enter once through passive joint forces.
 
 For a cylindrical tank, the source uses
 
-$$h=\frac{V}{\pi R^2},\quad \omega^2=g\frac{\alpha}{R}\tanh\left(\frac{\alpha h}{R}\right),\quad \alpha=1.8411837813406593,$$
+```math
+h=\frac{V}{\pi R^2},\quad \omega^2=g\frac{\alpha}{R}\tanh\left(\frac{\alpha h}{R}\right),\quad \alpha=1.8411837813406593,
+```
 
-$$m_1=\frac{2mR\tanh(\alpha h/R)}{h\alpha(\alpha^2-1)},\quad k_s=m_1\omega^2,\quad c=2\zeta\omega m_1.$$
+```math
+m_1=\frac{2mR\tanh(\alpha h/R)}{h\alpha(\alpha^2-1)},\quad k_s=m_1\omega^2,\quad c=2\zeta\omega m_1.
+```
 
 The standalone linear translation limit is $\ddot\xi+2\zeta\omega\dot\xi+\omega^2\xi=g_\parallel-a_\parallel$. The deployed native model includes rotational/inertial terms through multibody dynamics; it does not run this standalone equation beside MuJoCo.
 
-$$E_{\mathrm{modal}}=\tfrac12m_1\|\dot\xi\|^2+\tfrac12k_s\|\xi\|^2,\qquad p_r(t)=p_0+\begin{bmatrix}0.75\sin(2\pi t/30)\\0.375\sin(4\pi t/30)\end{bmatrix}\ \mathrm{m}.$$
+```math
+E_{\mathrm{modal}} = \frac{1}{2} m_1 \lVert \dot{\xi} \rVert^2
+                  + \frac{1}{2} k_s \lVert \xi \rVert^2.
+```
+
+```math
+p_r(t) = p_0 +
+\begin{bmatrix}
+0.75 \sin(2\pi t/30) \\
+0.375 \sin(4\pi t/30)
+\end{bmatrix}
+\,\mathrm{m}.
+```
 
 The 0.5 L liquid has total mass 0.499 kg: **one** 0.338885 kg moving body with two slides plus 0.160115 kg fixed mass. Frequency is 2.128736 Hz; damping ratio 0.02 is assumed. Native reactions provide two-way coupling; diagnostic force/torque is not reapplied. The modal-height approximation limits pressure-moment fidelity. [Equations, units and source links](docs/SYSTEM_MODEL.md).
 
@@ -86,9 +104,23 @@ V4 and PPO are directly compared over complete matched horizons. V3_FFv1 has com
 
 The released checkpoint is a Standard PPO actor–critic: separate **64–64 Tanh MLPs**, **31 privileged observations**, and **three diagonal-Gaussian residual actions**. Inputs include robot/reference state, previous action, base control, heading, liquid position/velocity, analytic acceleration and reference phase. Inputs are scaled and clipped to ±10; no CNN or learned image encoder is used.
 
-$$\delta=0.25\operatorname{clip}(a,-1,1),\quad u_r=\operatorname{clip}(u_{V4}+\delta,-1,1),\quad \tau=-10\operatorname{clip}(u_{\mathrm{base}}+0.03u_r,-1,1).$$
+The residual is composed in three stages, with clipping applied component-wise:
 
-Thus a raw action is not a direct motor torque. The reward is time-integrated $\exp(-C)$, where $C$ weights normalized position, velocity, tilt, modal energy, torque and residual variation; invalid termination receives −5. The PPO update uses GAE with $\gamma=0.99$, $\lambda=0.95$, ratio clipping 0.2 and target KL 0.03.
+```math
+\delta = 0.25\,\mathrm{clip}(a,-1,1).
+```
+
+```math
+u_r = \mathrm{clip}(u_{\mathrm{V4}} + \delta,-1,1).
+```
+
+```math
+\tau = -10\,\mathrm{clip}(u_{\mathrm{base}} + 0.03u_r,-1,1).
+```
+
+Here, `clip(x, -1, 1)` limits each component of `x` to the interval `[-1, 1]`; motor torque is in N·m.
+
+Thus a raw action is not a direct motor torque. The reward is time-integrated `exp(-C)`, where `C` weights normalized position, velocity, tilt, modal energy, torque and residual variation; invalid termination receives −5. The PPO update uses GAE with discount factor γ = 0.99, GAE parameter λ = 0.95, ratio clipping 0.2 and target KL 0.03.
 
 ![Actual 500k campaign reward history](assets/plots/experiment_1/training_04_reward.png)
 ![Actual training tracking and sloshing diagnostics](docs/figures/training_diagnostics.png)
