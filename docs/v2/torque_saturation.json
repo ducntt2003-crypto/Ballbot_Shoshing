@@ -1,0 +1,146 @@
+[
+  {
+    "level": "MILD",
+    "seed": 2618003,
+    "fraction_any_abs_tau_ge9_9": 0.31561538461538463,
+    "time_with_saturation_s": 8.206,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "COURSE",
+    "seed": 2618002,
+    "fraction_any_abs_tau_ge9_9": 0.29184615384615387,
+    "time_with_saturation_s": 7.588,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "COURSE",
+    "seed": 2618003,
+    "fraction_any_abs_tau_ge9_9": 0.3087692307692308,
+    "time_with_saturation_s": 8.028,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "BUMPS",
+    "seed": 2618003,
+    "fraction_any_abs_tau_ge9_9": 0.3183846153846154,
+    "time_with_saturation_s": 8.278,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "SLOPES",
+    "seed": 2618002,
+    "fraction_any_abs_tau_ge9_9": 0.3363846153846154,
+    "time_with_saturation_s": 8.746,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "COURSE",
+    "seed": 2618001,
+    "fraction_any_abs_tau_ge9_9": 0.054170073589533935,
+    "time_with_saturation_s": 1.06,
+    "native_stop_s": 19.570000000000032,
+    "termination": "ROM_INVALID"
+  },
+  {
+    "level": "FLAT",
+    "seed": 2618001,
+    "fraction_any_abs_tau_ge9_9": 0.31584615384615383,
+    "time_with_saturation_s": 8.212,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "RANDOM",
+    "seed": 2618003,
+    "fraction_any_abs_tau_ge9_9": 0.3616923076923077,
+    "time_with_saturation_s": 9.404,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "RANDOM",
+    "seed": 2618002,
+    "fraction_any_abs_tau_ge9_9": 0.35307692307692307,
+    "time_with_saturation_s": 9.18,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "FLAT",
+    "seed": 2618003,
+    "fraction_any_abs_tau_ge9_9": 0.3097692307692308,
+    "time_with_saturation_s": 8.054,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "MILD",
+    "seed": 2618001,
+    "fraction_any_abs_tau_ge9_9": 0.29953846153846153,
+    "time_with_saturation_s": 7.788,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "BUMPS",
+    "seed": 2618002,
+    "fraction_any_abs_tau_ge9_9": 0.3596923076923077,
+    "time_with_saturation_s": 9.352,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "BUMPS",
+    "seed": 2618001,
+    "fraction_any_abs_tau_ge9_9": 0.39376923076923076,
+    "time_with_saturation_s": 10.238,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "RANDOM",
+    "seed": 2618001,
+    "fraction_any_abs_tau_ge9_9": 0.3557692307692308,
+    "time_with_saturation_s": 9.25,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "SLOPES",
+    "seed": 2618003,
+    "fraction_any_abs_tau_ge9_9": 0.3222307692307692,
+    "time_with_saturation_s": 8.378,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "SLOPES",
+    "seed": 2618001,
+    "fraction_any_abs_tau_ge9_9": 0.3733076923076923,
+    "time_with_saturation_s": 9.706,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "FLAT",
+    "seed": 2618002,
+    "fraction_any_abs_tau_ge9_9": 0.35346153846153844,
+    "time_with_saturation_s": 9.19,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  },
+  {
+    "level": "MILD",
+    "seed": 2618002,
+    "fraction_any_abs_tau_ge9_9": 0.334,
+    "time_with_saturation_s": 8.684000000000001,
+    "native_stop_s": 25.99999999999647,
+    "termination": "TIME_LIMIT"
+  }
+]

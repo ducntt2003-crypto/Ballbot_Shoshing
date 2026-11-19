@@ -1,0 +1,22 @@
+\section{Related Work}
+BallBot tracking is constrained by the relationship between body lean and translation. Nagarajan, Kantor, and Hollis studied trajectory planning and feedback control for a dynamically stable spherical-wheel robot \cite{nagarajan2009}. Their treatment provides an established underactuated-control context. Our experiments instead evaluate the repository's existing cascades and identified modal feedback within a particular contact and payload model. They do not reproduce that hardware platform or claim a replacement analytical tracking theorem.
+
+Liquid transportation has also been studied on mobile platforms. Hamaguchi and Taniguchi used a spherical-pendulum representation and input-shaped path and acceleration design for a wheeled robot \cite{hamaguchi2005}. That work links commanded motion to sloshing constraints, whereas the present benchmark retains its original reference and examines control under balancing and contact constraints. Its physical experiments do not validate our liquid surrogate. The broader modal-model background is provided by the NASA collection edited by Abramson \cite{abramson1966}; here it motivates only the first lateral-mode parameterization, not the fidelity of an arbitrary moving-tank moment model.
+
+MuJoCo's documented generalized-coordinate dynamics, compliant contact formulation, and available integrators provide the numerical foundation \cite{mujoco332}. We distinguish engine behavior from our process-local collision-selection adapter. Neither documentation nor a local geometry correction proves the real material properties of a simulated sphere and terrain. Stable-Baselines3 provides a documented PPO implementation with implementation-specific conventions \cite{raffin2021,sb3ppo}. The source snapshot and rollout checks are therefore as important as the algorithm name.
+
+PPO optimizes a clipped policy-ratio surrogate \cite{schulman2017}, while generalized advantage estimation introduces an exponentially weighted temporal estimator \cite{schulman2015}. We use those existing methods without claiming a new optimizer. Residual reinforcement learning combines a conventional controller with a learned correction \cite{johannink2018}; our motor-authority bound makes that decomposition explicit. Asymmetric actor--critic learning separates privileged critic information from actor observations \cite{pinto2017}. The present privileged actor and backbone do not satisfy that robot-only actor contract, despite sharing the broader motivation of exploiting simulated state.
+
+\begin{table*}[t]\centering\small
+\caption{Literature context. ``Not evaluated'' denotes a dimension outside the cited source description; it is not an adverse result.}
+\begin{tabular}{llll}\hline
+Source & Platform / method & Liquid representation & Relation to this study\\\hline
+Lauwers et al. & Spherical-wheel balancing robot & Not the study focus & Hardware architecture foundation\\
+Nagarajan et al. & BallBot planning / feedback & Not the study focus & Underactuated tracking context\\
+Hamaguchi and Taniguchi & Wheeled robot / input shaping & Spherical pendulum & Motion--sloshing design context\\
+Johannink et al. & Manipulation / residual RL & Not the study focus & Additive learned correction\\
+Pinto et al. & Image actor / privileged critic & Not the study focus & Information-access distinction\\
+Present study & Simulated BallBot / bounded residuals & Two-coordinate modal mass & Mild terrain; evidence-limited comparison\\\hline
+\end{tabular}\end{table*}
+
+The distinction from these foundations is the particular integration and the auditable experimental record. A new software combination is not automatically a novel physical model, and an exploration distribution is not automatically a better controller. We position the study as a reproducible numerical investigation with informative failure cases. Claims about priority across all related BallBot and liquid-transport literature would require a broader systematic review and are intentionally absent.

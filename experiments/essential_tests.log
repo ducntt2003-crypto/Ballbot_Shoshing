@@ -1,0 +1,30 @@
+test_inherited (unittest.loader._FailedTest) ... ERROR
+test_checkpoint (test_release.ReleaseTests) ... ok
+test_command_bounds (test_release.ReleaseTests) ... ok
+test_cross_controller_physics (test_release.ReleaseTests) ... ok
+test_key_release_and_focus (test_release.ReleaseTests) ... ok
+test_native_replay_and_initial_match (test_release.ReleaseTests) ... ok
+test_opposite_keys (test_release.ReleaseTests) ... ok
+test_pause_reset_exit (test_release.ReleaseTests) ... ok
+test_playground_geometry (test_release.ReleaseTests) ... ok
+test_recovery_censoring (test_release.ReleaseTests) ... ok
+test_release_neutral (test_release.ReleaseTests) ... ok
+test_space (test_release.ReleaseTests) ... ok
+test_turn_heading (test_release.ReleaseTests) ... ok
+
+======================================================================
+ERROR: test_inherited (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/duc/OpenBallBot-RL/public_releases/SloshBot-RL_20261116_v1/tests/test_inherited.py", line 9, in load_tests
+    spec=importlib.util.spec_from_file_location('inherited_'+cls,ROOT/'tests/historical'/file);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);c=getattr(m,cls)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1016, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/home/duc/OpenBallBot-RL/public_releases/SloshBot-RL_20261116_v1/tests/historical/test_research.py'
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.212s
+
+FAILED (errors=1)
+ESSENTIAL_TEST_RECEIPT {"passed": false, "tests": 13, "failures": 0, "errors": 1, "native_steps": 10, "wall_s": 1.9067703519999668, "command": "python -B scripts/test_essential.py"}

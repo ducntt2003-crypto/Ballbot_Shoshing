@@ -1,0 +1,172 @@
+[
+  {
+    "figure": "fig01",
+    "title": "Source-based simulation and control architecture (schematic).",
+    "caption": "Source-based simulation and control architecture (schematic).",
+    "sources": [
+      {
+        "path": "ballbot_sloshing_research/coupling/model.py",
+        "sha256": "2a73390b25dd844c7c0d8c2a03e90d46b7d6bdad67e225cca555924c52a65054"
+      },
+      {
+        "path": "ballbot_sloshing_research/track8_y/env.py",
+        "sha256": "26ff07185dfcbcf7f7cdba30a4642724c2f5f52e65cd2b335ba6af061a0f33d0"
+      }
+    ],
+    "plotting_script": "scripts/figures_tables.py + scripts/figure_revision.py",
+    "new_native_steps": 0
+  },
+  {
+    "figure": "fig02",
+    "title": "Archived full-horizon V4 trajectory; synchronous original reference.",
+    "caption": "Archived full-horizon V4 trajectory; synchronous original reference.",
+    "sources": [
+      {
+        "path": "ballbot_sloshing_research/results/track8_l_20261107_v1/runs/confirmation/V4/figure8_1801001/trace.npz",
+        "sha256": "822a3b197585e918f57b19d5d692b325151cb2db0194f3ff947634d7efcbffb2"
+      }
+    ],
+    "plotting_script": "scripts/figures_tables.py",
+    "new_native_steps": 0
+  },
+  {
+    "figure": "fig03",
+    "title": "Six L full-horizon tracking histories; DEV and confirmation remain distinct.",
+    "caption": "Six L full-horizon tracking histories; DEV and confirmation remain distinct.",
+    "sources": [
+      {
+        "path": "ballbot_sloshing_research/results/track8_l_20261107_v1/runs/DEV/V4/figure8_1800101/trace.npz",
+        "sha256": "33a1d15fe828aa8500381446413430b128977686a91f55a16b85dfe36018ab1a"
+      },
+      {
+        "path": "ballbot_sloshing_research/results/track8_l_20261107_v1/runs/DEV/V4/figure8_1800102/trace.npz",
+        "sha256": "af3e4b2f70c19f9e014c9d4a4eabf477c91e4f1a60734ba4250b9ddb225dfe26"
+      },
+      {
+        "path": "ballbot_sloshing_research/results/track8_l_20261107_v1/runs/DEV/V4/figure8_1800103/trace.npz",
+        "sha256": "492b567d0c85fef6fe7559c8df83767172f3750340183d4b034b923dd151382a"
+      },
+      {
+        "path": "ballbot_sloshing_research/results/track8_l_20261107_v1/runs/confirmation/V4/figure8_1801001/trace.npz",
+        "sha256": "822a3b197585e918f57b19d5d692b325151cb2db0194f3ff947634d7efcbffb2"
+      },
+      {
+        "path": "ballbot_sloshing_research/results/track8_l_20261107_v1/runs/confirmation/V4/figure8_1801002/trace.npz",
+        "sha256": "2c69c781f7e425775a68f620e1b5375ff01561888f007ea00beb8ef9240afba1"
+      },
+      {
+        "path": "ballbot_sloshing_research/results/track8_l_20261107_v1/runs/confirmation/V4/figure8_1801003/trace.npz",
+        "sha256": "b7f9779f322b044eb37a1b3bce8afc3de2754ef6f70e4ef9881ec7a8240f6226"
+      }
+    ],
+    "plotting_script": "scripts/figures_tables.py",
+    "new_native_steps": 0
+  },
+  {
+    "figure": "fig04",
+    "title": "Generalized modal coordinates and model energy; not measured free-surface elevation.",
+    "caption": "Generalized modal coordinates and model energy; not measured free-surface elevation.",
+    "sources": [
+      {
+        "path": "ballbot_sloshing_research/results/track8_l_20261107_v1/runs/confirmation/V4/figure8_1801001/trace.npz",
+        "sha256": "822a3b197585e918f57b19d5d692b325151cb2db0194f3ff947634d7efcbffb2"
+      }
+    ],
+    "plotting_script": "scripts/figures_tables.py",
+    "new_native_steps": 0
+  },
+  {
+    "figure": "fig05",
+    "title": "Archived actuator and balance histories, L confirmation 1801001.",
+    "caption": "Archived actuator and balance histories, L confirmation 1801001.",
+    "sources": [
+      {
+        "path": "ballbot_sloshing_research/results/track8_l_20261107_v1/runs/confirmation/V4/figure8_1801001/trace.npz",
+        "sha256": "822a3b197585e918f57b19d5d692b325151cb2db0194f3ff947634d7efcbffb2"
+      }
+    ],
+    "plotting_script": "scripts/figures_tables.py",
+    "new_native_steps": 0
+  },
+  {
+    "figure": "fig06",
+    "title": "Frozen 16-window contract: passing L cohorts and retained M known failure.",
+    "caption": "Frozen 16-window contract: passing L cohorts and retained M known failure.",
+    "sources": [
+      {
+        "path": "ballbot_sloshing_research/results/track8_l_20261107_v1/evaluation_results.json",
+        "sha256": "375f65610bfb7851a6796497aadbf396c08522c3d62b52ebbe5982b89eff8471"
+      },
+      {
+        "path": "ballbot_sloshing_research/results/track8_m_20261107_v1/long_results.json",
+        "sha256": "2439d2cb9adba5d4a7245f9d2073d3dc4f42d998e2019ae104ec25eb5dcf87e6"
+      }
+    ],
+    "plotting_script": "scripts/figures_tables.py",
+    "new_native_steps": 0
+  },
+  {
+    "figure": "fig07",
+    "title": "U FRESH_1: nested-window energy effects; no independent replication.",
+    "caption": "U FRESH_1: nested-window energy effects; no independent replication.",
+    "sources": [
+      {
+        "path": "ballbot_sloshing_research/results/track8_u_20261109_v1/horizon_window_analysis.json",
+        "sha256": "91bbe0f1c44f1605df0d26dd8bf17de9b8600871c7cee339f657482cc06e1397"
+      }
+    ],
+    "plotting_script": "scripts/figures_tables.py",
+    "new_native_steps": 0
+  },
+  {
+    "figure": "fig08",
+    "title": "Y training return by run; two paired initialization seeds.",
+    "caption": "Y training return by run; two paired initialization seeds.",
+    "sources": [
+      {
+        "path": "ballbot_sloshing_research/results/track8_y_20261110_v1/training/STANDARD_2271001/episodes.json",
+        "sha256": "aca9e647228fa703b0b7b0e37dbdb0a52c541e11b84c35cbb9243409207606c1"
+      },
+      {
+        "path": "ballbot_sloshing_research/results/track8_y_20261110_v1/training/AXIS_MIXTURE_2271001/episodes.json",
+        "sha256": "8e1f632a4f1fe90232a6d77d8ca69cb02ed5d0ec36b132ccfec6393ed6d26c33"
+      },
+      {
+        "path": "ballbot_sloshing_research/results/track8_y_20261110_v1/training/STANDARD_2271002/episodes.json",
+        "sha256": "3b96bab4099f37fd106de41f03d3410bc89b1538ba99d4c6546b59adeacef92a"
+      },
+      {
+        "path": "ballbot_sloshing_research/results/track8_y_20261110_v1/training/AXIS_MIXTURE_2271002/episodes.json",
+        "sha256": "be7489cbfe0d024b14b15ddc6bff76991d444fce7674e1e9d6f5d951427975b6"
+      }
+    ],
+    "plotting_script": "scripts/figures_tables.py",
+    "new_native_steps": 0
+  },
+  {
+    "figure": "fig09",
+    "title": "Matched final policies: descriptive per-seed effects, no significance claim.",
+    "caption": "Matched final policies: descriptive per-seed effects, no significance claim.",
+    "sources": [
+      {
+        "path": "ballbot_sloshing_research/results/track8_y_20261110_v1/tables/paired_final.csv",
+        "sha256": "bb9c7d438d7301d5b403cf572e32323791d29af96e55483deff37a0bc8ddff22"
+      }
+    ],
+    "plotting_script": "scripts/figures_tables.py",
+    "new_native_steps": 0
+  },
+  {
+    "figure": "fig10",
+    "title": "Selected Y DEV_1 active-loop refinement; sampled sensitivity, not an error bound.",
+    "caption": "Selected Y DEV_1 active-loop refinement; sampled sensitivity, not an error bound.",
+    "sources": [
+      {
+        "path": "ballbot_sloshing_research/results/track8_y_20261110_v1/post_numerical_results.json",
+        "sha256": "6ce8bcb1f0b5b6396fe1e9746cb65009f3454f72b7efb3d118069abf96bfb875"
+      }
+    ],
+    "plotting_script": "scripts/figures_tables.py",
+    "new_native_steps": 0
+  }
+]

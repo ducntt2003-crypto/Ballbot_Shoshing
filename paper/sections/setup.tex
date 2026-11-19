@@ -1,0 +1,36 @@
+\section{Historical Setup and Common Statistical Conventions}
+The earlier benchmark in this section is retained as context. The primary parallel campaign uses the enlarged reference and dedicated seeds, curriculum, and resource ceilings specified below; its outcomes are not pooled with the historical smaller-reference trials.
+\subsection{Environment and frozen task}
+The later archived environment records Python 3.10.12, MuJoCo 3.3.2, Gymnasium 1.1.1, PyTorch 2.7.0+cu126, and Stable-Baselines3 2.6.0. The current synthesis host identifies Ubuntu 22.04.5; the exact historical operating-system distribution is not asserted where only kernel/platform metadata was archived. PPO runs used CPU with one numerical thread. Native integration uses RK4 with a $2$ ms primary step and base-controller period; the residual actor updates every $10$ ms. Historical software and source hashes are indexed separately rather than assigning the latest environment retroactively to all phases.\claim{C12}
+
+The original reference, before addition of the recorded world origin offset, is
+\begin{align}
+ x_d(t)&=0.5\sin(2\pi t/30),\\
+ y_d(t)&=0.25\sin(4\pi t/30).
+\end{align}
+Velocity and acceleration are analytical derivatives at the current simulation time. No fitted time shift is used to improve reported tracking. Reference phase continues through prediction and continuation, and source-level initial placement occurs before the trial begins. A short prefix of this reference is not a completed figure-eight.
+
+The frozen full-task contract requires the complete original duration, vector XY RMSE at most $0.10$ m, maximum XY error at most $0.25$ m, tilt norm at most $0.12$ rad, each roll/pitch RMS at most $5$ degrees, yaw drift at most $10$ degrees, and saturation fraction at most $5\%$. It also requires the original node-window test and actual path length at least $70\%$ of reference path length. ROM admissibility uses $\|q\|\leq0.0084$ m. Contact and numerical failures are identified separately.\claim{C13}
+
+The node test deserves a precise description. For each of sixteen reference-centered windows, at least one synchronous sample must satisfy $\|p(t)-p_d(t)\|\leq0.10$ m. This is not intersection with sixteen fixed spatial balls. Historical terminology calls these ordered nodes, but the implemented time-window predicate is preserved exactly. The paper reports it as a frozen tracking-window contract and does not replace it with an easier geometric test after observing a failure.
+
+\subsection{Metrics and censoring}
+At uniform post-step samples, $e_k=p_k-p_d(t_k)$ and
+\begin{equation}
+ R_{XY}=\sqrt{N^{-1}\sum_k e_k^Te_k}.
+\end{equation}
+This is vector-position RMSE, not the RMS of all scalar components with an additional factor of two. Torque RMS averages squared values across samples and motors; saturation counts samples with any motor at or above $9.9$ Nm in magnitude. Yaw drift is measured after unwrapping relative to the first archived sample. Maxima and guard crossings retain their native sampling interpretation.
+
+Liquid-energy summaries use the admissible prefix. An early stopped controller cannot be ranked as if its prefix were a full-horizon energy result. A separate survival flag records whether the intended duration was reached; full task completion additionally requires all tracking and physical criteria. Short U/Y task gates are reported under their own contracts, including a chord-progress check where applicable. They do not replace the sixteen-window full-task predicate.
+
+\subsection{Registered learning comparison}
+The Y pilot uses training seeds $2271001$ and $2271002$, each with matched Standard and Mixture initialization. Actor, critic, and initial log standard deviations are bitwise matched within a pair; optimizers start fresh. Each of four runs contains $16,384$ transitions, totaling $65,536$. Environment and terrain streams remain matched according to the frozen registry. Different distribution samplers consume random numbers differently, so equal seeds are not described as identical action paths.\claim{C14}
+
+The common PPO configuration uses rollout length $512$, minibatches $64$, up to five epochs, learning rate $3\times10^{-4}$, discount $0.99$, GAE parameter $0.95$, ratio clip $0.2$, entropy coefficient zero, value coefficient $0.5$, gradient cap $0.5$, and target KL $0.03$. Five-second training episodes begin at the original reference start. Neither rollout length nor an archive containing many episodes establishes full-phase reference coverage.
+
+Twenty registered one-second evaluation slots include reference controllers, shared initial deterministic means, final policies, and selected midpoint diagnostics. Final contrasts cross the two training seeds with two development contexts. Later refinement and conditional three-second runs reuse development contexts. Checkpoint selection therefore yields development evidence rather than fresh final confirmation. Selected and actual-last states are retained, and no final held-out result is used to select a checkpoint.
+
+\subsection{Statistical interpretation}
+The independent training replication count is two, not four. Two methods within a matched initialization are paired treatments; two development terrains per checkpoint are repeated evaluations, not new independent training replicates. Native steps, candidate forecasts, RK stages, and rollout buffers are never counted as experimental subjects. Per-seed effects are reported descriptively; a population superiority confidence interval is not manufactured from four crossed cells.
+
+For full-task V4 trials, each registered robot/terrain context is an evaluation unit, and development and confirmation are kept separate. Historical J and later L use different contact handling and are not pooled into a single robustness rate. Three successful teacher confirmation cases permit only a very wide interval under the stated sampling assumptions. Reused seeds, nested horizons, and known regression cases are explicitly labeled. This framework permits a complete paper for a selected, limited scope without pretending that the archive supplies a comprehensive final benchmark.

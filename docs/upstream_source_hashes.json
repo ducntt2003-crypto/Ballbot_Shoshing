@@ -1,0 +1,656 @@
+{
+  "_vendor/chrono_fsi/integration/geometry.py": {
+    "upstream_relative_path": "chrono_fsi/integration/geometry.py",
+    "upstream_sha256": "783c8a55a63a74a929dedeca2baad132f8af56e48b3abf510e125636bc9206b1",
+    "public_sha256": "783c8a55a63a74a929dedeca2baad132f8af56e48b3abf510e125636bc9206b1",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/integration/__init__.py": {
+    "upstream_relative_path": "chrono_fsi/integration/__init__.py",
+    "upstream_sha256": "f8fcfe7f8d2b746cc3fcd8d5498e1bec69f34f4d6f57fb170cac570370546118",
+    "public_sha256": "f8fcfe7f8d2b746cc3fcd8d5498e1bec69f34f4d6f57fb170cac570370546118",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/integration/controllers.py": {
+    "upstream_relative_path": "chrono_fsi/integration/controllers.py",
+    "upstream_sha256": "3054d70ac18de65ca9fbb5b5325b33a85049a5ee4462ec24ee4ef6e3b3dc0c17",
+    "public_sha256": "3054d70ac18de65ca9fbb5b5325b33a85049a5ee4462ec24ee4ef6e3b3dc0c17",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/phase2/__init__.py": {
+    "upstream_relative_path": "chrono_fsi/phase2/__init__.py",
+    "upstream_sha256": "77e48ff0894405a1a086dc6e8cfd06c70141287d674c8c14848e264ec74def6a",
+    "public_sha256": "77e48ff0894405a1a086dc6e8cfd06c70141287d674c8c14848e264ec74def6a",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/phase2/controllers.py": {
+    "upstream_relative_path": "chrono_fsi/phase2/controllers.py",
+    "upstream_sha256": "e93f6dabfe1992f03fb43217ccf032ccd56c8bced2e6074e9f617fac17f897df",
+    "public_sha256": "e93f6dabfe1992f03fb43217ccf032ccd56c8bced2e6074e9f617fac17f897df",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/configs/integration/train_long.json": {
+    "upstream_relative_path": "chrono_fsi/configs/integration/train_long.json",
+    "upstream_sha256": "13a694194b79e016ad90ff8042023d9640cb18375e052c6feaa88c972b31f8c8",
+    "public_sha256": "13a694194b79e016ad90ff8042023d9640cb18375e052c6feaa88c972b31f8c8",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/configs/integration/visualization.json": {
+    "upstream_relative_path": "chrono_fsi/configs/integration/visualization.json",
+    "upstream_sha256": "3fcd55da9936f4b2f8b29e59422bdc15f8ea3d03174d355629a1b2e7d16fddbe",
+    "public_sha256": "3fcd55da9936f4b2f8b29e59422bdc15f8ea3d03174d355629a1b2e7d16fddbe",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/configs/integration/default.json": {
+    "upstream_relative_path": "chrono_fsi/configs/integration/default.json",
+    "upstream_sha256": "f8f296450b3dbf33c0be1f4a249d62a19d01a34a74a4ba2e6c279cc4fc09562e",
+    "public_sha256": "f8f296450b3dbf33c0be1f4a249d62a19d01a34a74a4ba2e6c279cc4fc09562e",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/configs/integration/coupling.json": {
+    "upstream_relative_path": "chrono_fsi/configs/integration/coupling.json",
+    "upstream_sha256": "60a6b8f8147f63218696eb5301440d73b6c8c7a0da91d01f20d1e9ace01a0eb5",
+    "public_sha256": "60a6b8f8147f63218696eb5301440d73b6c8c7a0da91d01f20d1e9ace01a0eb5",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/configs/integration/tank.json": {
+    "upstream_relative_path": "chrono_fsi/configs/integration/tank.json",
+    "upstream_sha256": "3e294bb64b0642f31bb967a84de0411b492928804df1870246b6c79d050d7b3f",
+    "public_sha256": "3e294bb64b0642f31bb967a84de0411b492928804df1870246b6c79d050d7b3f",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/configs/integration/train_smoke.json": {
+    "upstream_relative_path": "chrono_fsi/configs/integration/train_smoke.json",
+    "upstream_sha256": "41f9cc3f0a58257f36cb2da92e7bf29d13e9b311ecc822f63f5a8e1b9d3195f3",
+    "public_sha256": "41f9cc3f0a58257f36cb2da92e7bf29d13e9b311ecc822f63f5a8e1b9d3195f3",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/configs/integration/domain_randomization.json": {
+    "upstream_relative_path": "chrono_fsi/configs/integration/domain_randomization.json",
+    "upstream_sha256": "be486e1b64ce32eb7d693901eedee8a8fc3ed98d8b69727f71fb417083afc9db",
+    "public_sha256": "be486e1b64ce32eb7d693901eedee8a8fc3ed98d8b69727f71fb417083afc9db",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/configs/integration/controller.json": {
+    "upstream_relative_path": "chrono_fsi/configs/integration/controller.json",
+    "upstream_sha256": "f9feff0e2e1a618b763c1befb4d9ca130c3b34f2082a31217644dba7ce64c668",
+    "public_sha256": "f9feff0e2e1a618b763c1befb4d9ca130c3b34f2082a31217644dba7ce64c668",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/configs/integration/fluid.json": {
+    "upstream_relative_path": "chrono_fsi/configs/integration/fluid.json",
+    "upstream_sha256": "bdd883c50a369f1c7170a780802877e959c6c6c58485620a49cba5f70b990380",
+    "public_sha256": "bdd883c50a369f1c7170a780802877e959c6c6c58485620a49cba5f70b990380",
+    "identical": true
+  },
+  "_vendor/chrono_fsi/configs/integration/robot.json": {
+    "upstream_relative_path": "chrono_fsi/configs/integration/robot.json",
+    "upstream_sha256": "ef94390876cc5c25de9a6b7124ddf2834405a4566848f8e2eb080cc40bb7d2e8",
+    "public_sha256": "ef94390876cc5c25de9a6b7124ddf2834405a4566848f8e2eb080cc40bb7d2e8",
+    "identical": true
+  },
+  "_vendor/ballbotgym/ballbotgym/assets/bbot.xml": {
+    "upstream_relative_path": "ballbotgym/ballbotgym/assets/bbot.xml",
+    "upstream_sha256": "4718010dc45eba8489a22ffb3f27631f1fdb161093acfabce56d36399daf8fcb",
+    "public_sha256": "4718010dc45eba8489a22ffb3f27631f1fdb161093acfabce56d36399daf8fcb",
+    "identical": true
+  },
+  "_vendor/ballbotgym/ballbotgym/assets/textures/basketball_texture.png": {
+    "upstream_relative_path": "ballbotgym/ballbotgym/assets/textures/basketball_texture.png",
+    "upstream_sha256": "4fb5616a4760a22d4af8c27532d27a5d7d22870167e8a2eaad2183efa4011301",
+    "public_sha256": "4fb5616a4760a22d4af8c27532d27a5d7d22870167e8a2eaad2183efa4011301",
+    "identical": true
+  },
+  "_vendor/ballbotgym/ballbotgym/assets/stl_files/cone.stl": {
+    "upstream_relative_path": "ballbotgym/ballbotgym/assets/stl_files/cone.stl",
+    "upstream_sha256": "867a86c436a3749517775bb43b41c870d780ca8b45540d7fc14edbc581b41f6a",
+    "public_sha256": "867a86c436a3749517775bb43b41c870d780ca8b45540d7fc14edbc581b41f6a",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/__init__.py",
+    "upstream_sha256": "85c34b5db63acb84a46ecb599eaba385c04de01ff74af81d9005e130304c0e06",
+    "public_sha256": "85c34b5db63acb84a46ecb599eaba385c04de01ff74af81d9005e130304c0e06",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/common.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/common.py",
+    "upstream_sha256": "5fc3017c478ee9b99dca1c84ce12df42bba3f6ec9c705129e63f5328985f6ee8",
+    "public_sha256": "5fc3017c478ee9b99dca1c84ce12df42bba3f6ec9c705129e63f5328985f6ee8",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/coupling/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/coupling/__init__.py",
+    "upstream_sha256": "75fbdddf6ae311d85dd1fd8073db839e182cde13e55ef59f16714a4a812ed1ff",
+    "public_sha256": "75fbdddf6ae311d85dd1fd8073db839e182cde13e55ef59f16714a4a812ed1ff",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/coupling/model.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/coupling/model.py",
+    "upstream_sha256": "2a73390b25dd844c7c0d8c2a03e90d46b7d6bdad67e225cca555924c52a65054",
+    "public_sha256": "2a73390b25dd844c7c0d8c2a03e90d46b7d6bdad67e225cca555924c52a65054",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_l/exact_oracle.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_l/exact_oracle.py",
+    "upstream_sha256": "5aa2a33d36dbf06ad3c57d4afb563a6e08fe75601d07795904cc3a45097db5fc",
+    "public_sha256": "5aa2a33d36dbf06ad3c57d4afb563a6e08fe75601d07795904cc3a45097db5fc",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_l/callback_timer.c": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_l/callback_timer.c",
+    "upstream_sha256": "7aea43b3e60c94c4c9bcb0e2821739deeeb0fac1357dc1ca067a73520d517cc1",
+    "public_sha256": "7aea43b3e60c94c4c9bcb0e2821739deeeb0fac1357dc1ca067a73520d517cc1",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_l/exact_adapter.c": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_l/exact_adapter.c",
+    "upstream_sha256": "e584b1d850c5fa2c761ef26c39c9c2742fe0c2e9dfa0a84864dbeb902c38b2b8",
+    "public_sha256": "e584b1d850c5fa2c761ef26c39c9c2742fe0c2e9dfa0a84864dbeb902c38b2b8",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_l/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_l/__init__.py",
+    "upstream_sha256": "0d699605919e38138a70303b7ba7b1b991898a494b840d60c0f60affe158b88b",
+    "public_sha256": "0d699605919e38138a70303b7ba7b1b991898a494b840d60c0f60affe158b88b",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_l/logger.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_l/logger.py",
+    "upstream_sha256": "4dd9e595e9eecd55aee42984cb29a53337b9514363c1aba44c2056b9cfdf5b1f",
+    "public_sha256": "4dd9e595e9eecd55aee42984cb29a53337b9514363c1aba44c2056b9cfdf5b1f",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_l/common.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_l/common.py",
+    "upstream_sha256": "d3e2fea75ba6c233d42bd439e8097245eeab80202d3cb3a0b5c82e7b7fd49fe5",
+    "public_sha256": "d3e2fea75ba6c233d42bd439e8097245eeab80202d3cb3a0b5c82e7b7fd49fe5",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_l/adapter.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_l/adapter.py",
+    "upstream_sha256": "36418c881e88effaaa54a7b5e67605008e645c0f973761f061a741fe44c85986",
+    "public_sha256": "36418c881e88effaaa54a7b5e67605008e645c0f973761f061a741fe44c85986",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase4/energy_diagnostics.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase4/energy_diagnostics.py",
+    "upstream_sha256": "58301a6aee12203284848ade5551c9edc2b117a5994b4fe07593674bd159108f",
+    "public_sha256": "58301a6aee12203284848ade5551c9edc2b117a5994b4fe07593674bd159108f",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase4/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase4/__init__.py",
+    "upstream_sha256": "8d701ed1be3423b6c73313966c299beccfbba22fbacf90fb72f548d7f5562896",
+    "public_sha256": "8d701ed1be3423b6c73313966c299beccfbba22fbacf90fb72f548d7f5562896",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase4/common.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase4/common.py",
+    "upstream_sha256": "68c99eb8139845b9eb166b26d7c58efc277543ebce4a952afad0267fe773f862",
+    "public_sha256": "68c99eb8139845b9eb166b26d7c58efc277543ebce4a952afad0267fe773f862",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase4/reward_experiment.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase4/reward_experiment.py",
+    "upstream_sha256": "eb3ceef883052f92306fb17f5d03cdcff56bc6687c34492f2571a09be3d925d4",
+    "public_sha256": "eb3ceef883052f92306fb17f5d03cdcff56bc6687c34492f2571a09be3d925d4",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase2/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase2/__init__.py",
+    "upstream_sha256": "56dd759f469b4388d83d98d5fa035c071a3c0eba5d7339c24536983a9060063e",
+    "public_sha256": "56dd759f469b4388d83d98d5fa035c071a3c0eba5d7339c24536983a9060063e",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase2/env.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase2/env.py",
+    "upstream_sha256": "4a29528adf116a9ed611ee186ccb71a99c60cafff13ee59b9ad7bfa452828341",
+    "public_sha256": "4a29528adf116a9ed611ee186ccb71a99c60cafff13ee59b9ad7bfa452828341",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_c/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_c/__init__.py",
+    "upstream_sha256": "7122a6566bfdf716270250b20d632d38803b5e89c43aa830887e0f59a898df13",
+    "public_sha256": "7122a6566bfdf716270250b20d632d38803b5e89c43aa830887e0f59a898df13",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_c/native.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_c/native.py",
+    "upstream_sha256": "6c0e2e9e3237d1bf226fe78a7c04443c8068ac9519f10fed192bfe14146c14b6",
+    "public_sha256": "6c0e2e9e3237d1bf226fe78a7c04443c8068ac9519f10fed192bfe14146c14b6",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_c/common.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_c/common.py",
+    "upstream_sha256": "30dd9fa5a7446f78a7de9bc3f71898fd43ca526cfd2ca076756da97f91a3fa8a",
+    "public_sha256": "30dd9fa5a7446f78a7de9bc3f71898fd43ca526cfd2ca076756da97f91a3fa8a",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_c/centroid_controller.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_c/centroid_controller.py",
+    "upstream_sha256": "58085433d07c9c5b109348f7ac97156515f4861ee961d2d085fc7c58b744e0b5",
+    "public_sha256": "58085433d07c9c5b109348f7ac97156515f4861ee961d2d085fc7c58b744e0b5",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_c/centroid_id.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_c/centroid_id.py",
+    "upstream_sha256": "2ea1dd67af8b3599e973dd8bc6618a974eae4116df2d1a906ec40b8c5577273a",
+    "public_sha256": "2ea1dd67af8b3599e973dd8bc6618a974eae4116df2d1a906ec40b8c5577273a",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase7/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase7/__init__.py",
+    "upstream_sha256": "e69791fc92da4c3e7b40bd42431f1ea2fc66af016f51718b203f1e2476498026",
+    "public_sha256": "e69791fc92da4c3e7b40bd42431f1ea2fc66af016f51718b203f1e2476498026",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase7/common.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase7/common.py",
+    "upstream_sha256": "a078cce92033946f62348249328ad0729a06e9db4fc7f8a3b142b9c66883706b",
+    "public_sha256": "a078cce92033946f62348249328ad0729a06e9db4fc7f8a3b142b9c66883706b",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase7/sparse_bc.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase7/sparse_bc.py",
+    "upstream_sha256": "97ae0724305d4ab9e5ffad0c35dc3fc552e7ee566b8a34c82b93cfad8fba5457",
+    "public_sha256": "97ae0724305d4ab9e5ffad0c35dc3fc552e7ee566b8a34c82b93cfad8fba5457",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase7/metrics.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase7/metrics.py",
+    "upstream_sha256": "21fe6faeec51ea8a1cc4c6de0ed1df3ddf35f0761083d0f7b6811e3287923e42",
+    "public_sha256": "21fe6faeec51ea8a1cc4c6de0ed1df3ddf35f0761083d0f7b6811e3287923e42",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/large_figure8_rl/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/large_figure8_rl/__init__.py",
+    "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/large_figure8_rl/common.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/large_figure8_rl/common.py",
+    "upstream_sha256": "4ad3bec711ab6dc1e6f4e08085beacf7ff3d81eaf40bc15b72ea028e90a48e62",
+    "public_sha256": "4ad3bec711ab6dc1e6f4e08085beacf7ff3d81eaf40bc15b72ea028e90a48e62",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/large_figure8_rl/isolation.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/large_figure8_rl/isolation.py",
+    "upstream_sha256": "9a186bcb095e32d0d5c5b2ca4b947249d22d908c909a8c6c8807f35908a1e190",
+    "public_sha256": "9a186bcb095e32d0d5c5b2ca4b947249d22d908c909a8c6c8807f35908a1e190",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/large_figure8_rl/env.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/large_figure8_rl/env.py",
+    "upstream_sha256": "54bf4b16d0d01f875cd7521f9912f513a1d70b2cbd6d2fb1738b6a01d7e09e91",
+    "public_sha256": "54bf4b16d0d01f875cd7521f9912f513a1d70b2cbd6d2fb1738b6a01d7e09e91",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_i/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_i/__init__.py",
+    "upstream_sha256": "4e2bfcb841fce46aa1da109ce8f189a681bf71daeeca842ba514163c5bfcce30",
+    "public_sha256": "4e2bfcb841fce46aa1da109ce8f189a681bf71daeeca842ba514163c5bfcce30",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_i/observer.c": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_i/observer.c",
+    "upstream_sha256": "def174c4c165239f2bf0e6e12fe95a6d78627b97b1ecd9acd99ce50151e354db",
+    "public_sha256": "def174c4c165239f2bf0e6e12fe95a6d78627b97b1ecd9acd99ce50151e354db",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_i/common.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_i/common.py",
+    "upstream_sha256": "cff94a2bb1636ffad6eecee37df5ed120537edec93558dad46e57da4d91cb87c",
+    "public_sha256": "cff94a2bb1636ffad6eecee37df5ed120537edec93558dad46e57da4d91cb87c",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8_i/observer.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8_i/observer.py",
+    "upstream_sha256": "f12822f418b7073a9d0d30379f5d67f7508d7f8e8f9a9293c7f120e7905a3b80",
+    "public_sha256": "f12822f418b7073a9d0d30379f5d67f7508d7f8e8f9a9293c7f120e7905a3b80",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase5/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase5/__init__.py",
+    "upstream_sha256": "1e3e5ac5e95cdf06c2528dd102975dfe7f86b357bac8cc203ecafe4514dec4ab",
+    "public_sha256": "1e3e5ac5e95cdf06c2528dd102975dfe7f86b357bac8cc203ecafe4514dec4ab",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase5/common.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase5/common.py",
+    "upstream_sha256": "94ac761a2094ad10f90627eed667d35376e5ee0f46bdf937ebeaad30b796acab",
+    "public_sha256": "94ac761a2094ad10f90627eed667d35376e5ee0f46bdf937ebeaad30b796acab",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase5/causal.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase5/causal.py",
+    "upstream_sha256": "04ab958f71f3fdec2e547857027c46ce61bd2d56b52f103e4d5c768bca217c5f",
+    "public_sha256": "04ab958f71f3fdec2e547857027c46ce61bd2d56b52f103e4d5c768bca217c5f",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/envs/ballbot_sloshing_env.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/envs/ballbot_sloshing_env.py",
+    "upstream_sha256": "b8c2b00aaa384b4840cf784d572499e89ec3e440745b2dc99634e1da07237b6a",
+    "public_sha256": "b8c2b00aaa384b4840cf784d572499e89ec3e440745b2dc99634e1da07237b6a",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/envs/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/envs/__init__.py",
+    "upstream_sha256": "4b7b0218da61927ac2fc6efa876d6485a51c5dabd91561498d4f0711069e3b73",
+    "public_sha256": "4b7b0218da61927ac2fc6efa876d6485a51c5dabd91561498d4f0711069e3b73",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/fluid/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/fluid/__init__.py",
+    "upstream_sha256": "33484568e5bcade452f705efd655844778c3a74030003173406df1602ec9467f",
+    "public_sha256": "33484568e5bcade452f705efd655844778c3a74030003173406df1602ec9467f",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/fluid/reduced_order.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/fluid/reduced_order.py",
+    "upstream_sha256": "a85aab6c55a182bf00200c935bc2b0c07ae92e7a3e0d0f45fb20ad609bb5e09c",
+    "public_sha256": "a85aab6c55a182bf00200c935bc2b0c07ae92e7a3e0d0f45fb20ad609bb5e09c",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/fluid/validation.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/fluid/validation.py",
+    "upstream_sha256": "cdd4fbb58906ece83b86b56d8562f0302a369acaf4be559ddeaf7d4c98bc78fb",
+    "public_sha256": "cdd4fbb58906ece83b86b56d8562f0302a369acaf4be559ddeaf7d4c98bc78fb",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8/controller.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8/controller.py",
+    "upstream_sha256": "2147a24c074f70d56b008738ca4f1493136402c0a49b01ded6aac6408b2b6bd1",
+    "public_sha256": "2147a24c074f70d56b008738ca4f1493136402c0a49b01ded6aac6408b2b6bd1",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8/reference.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8/reference.py",
+    "upstream_sha256": "cf583699488d8d9ed0039bb91dd85565ed5ac2953e3c048c331cd9cd24f41c94",
+    "public_sha256": "cf583699488d8d9ed0039bb91dd85565ed5ac2953e3c048c331cd9cd24f41c94",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8/__init__.py",
+    "upstream_sha256": "15f37c10f973145dbcc952d7165aabab5452a90309d15bc336c4985c1a0c2100",
+    "public_sha256": "15f37c10f973145dbcc952d7165aabab5452a90309d15bc336c4985c1a0c2100",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8/common.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8/common.py",
+    "upstream_sha256": "2747b7b27f60473d3818e74762e023c395cfe5993f66712c366e3e92ce8451d2",
+    "public_sha256": "2747b7b27f60473d3818e74762e023c395cfe5993f66712c366e3e92ce8451d2",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8/evaluate.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8/evaluate.py",
+    "upstream_sha256": "1c4fc3f325a75a930b15f32aa654a298d1d4429a54a68097d38ab17ef7b4240a",
+    "public_sha256": "1c4fc3f325a75a930b15f32aa654a298d1d4429a54a68097d38ab17ef7b4240a",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8/terrain.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8/terrain.py",
+    "upstream_sha256": "08f774cc23675b26b64345c094f64158e1068ed964af0f3cdc5e2a114b9cf6d5",
+    "public_sha256": "08f774cc23675b26b64345c094f64158e1068ed964af0f3cdc5e2a114b9cf6d5",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/track8/env.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/track8/env.py",
+    "upstream_sha256": "f3b524cedc9062797857dd19433e7faa2d0fe8ea7085fa486b6c0e6ccb726023",
+    "public_sha256": "f3b524cedc9062797857dd19433e7faa2d0fe8ea7085fa486b6c0e6ccb726023",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase6/__init__.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase6/__init__.py",
+    "upstream_sha256": "09c00c34f26b7e339e2decd94d0d09168f43e24e7bcfa2b2e71cb62cff2a992e",
+    "public_sha256": "09c00c34f26b7e339e2decd94d0d09168f43e24e7bcfa2b2e71cb62cff2a992e",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase6/teacher.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase6/teacher.py",
+    "upstream_sha256": "01714ee4974abbe692482268ed970c12a5cb9e1f092a78d56faea1f63e595644",
+    "public_sha256": "01714ee4974abbe692482268ed970c12a5cb9e1f092a78d56faea1f63e595644",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/phase6/common.py": {
+    "upstream_relative_path": "ballbot_sloshing_research/phase6/common.py",
+    "upstream_sha256": "7e0889bad7164fa01fa089ce2cfb83b7a97eaf05df54f1e7cd365fc58628473c",
+    "public_sha256": "7e0889bad7164fa01fa089ce2cfb83b7a97eaf05df54f1e7cd365fc58628473c",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/results/track8_c_20261105_v1/centroid_controller_config.json": {
+    "upstream_relative_path": "ballbot_sloshing_research/results/track8_c_20261105_v1/centroid_controller_config.json",
+    "upstream_sha256": "c59a4a074c4eca78182d0a146b2c2aa892ae997ad675cdd50d4dbfffdc896873",
+    "public_sha256": "c59a4a074c4eca78182d0a146b2c2aa892ae997ad675cdd50d4dbfffdc896873",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/results/large_figure8_rl_20261111_v1/reward_config.json": {
+    "upstream_relative_path": "ballbot_sloshing_research/results/large_figure8_rl_20261111_v1/reward_config.json",
+    "upstream_sha256": "980a975f4d31e7458ebc38fcf33fe0c98545038b52da0eb973f472b04d54daa4",
+    "public_sha256": "980a975f4d31e7458ebc38fcf33fe0c98545038b52da0eb973f472b04d54daa4",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/results/large_figure8_rl_20261111_v1/pilot_config.json": {
+    "upstream_relative_path": "ballbot_sloshing_research/results/large_figure8_rl_20261111_v1/pilot_config.json",
+    "upstream_sha256": "13306c19cd6452ab56d4e65004658b152e0fd324f100f9dc8ab055de1fa890c7",
+    "public_sha256": "13306c19cd6452ab56d4e65004658b152e0fd324f100f9dc8ab055de1fa890c7",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/results/research_20261101/coupling_validation.json": {
+    "upstream_relative_path": "ballbot_sloshing_research/results/research_20261101/coupling_validation.json",
+    "upstream_sha256": "fe344ab089dc9f42a2662cb319f889e60dec700f2a6f40fa3040cbc92efb59ce",
+    "public_sha256": "fe344ab089dc9f42a2662cb319f889e60dec700f2a6f40fa3040cbc92efb59ce",
+    "identical": true
+  },
+  "_vendor/ballbot_sloshing_research/results/research_20261101/fluid_validation_stage_work/summary.json": {
+    "upstream_relative_path": "ballbot_sloshing_research/results/research_20261101/fluid_validation_stage_work/summary.json",
+    "upstream_sha256": "cb5ade56156a9afa1a1e6d1025ec35794ca1958b80486d4fcc4603ef324458a8",
+    "public_sha256": "cb5ade56156a9afa1a1e6d1025ec35794ca1958b80486d4fcc4603ef324458a8",
+    "identical": true
+  },
+  "_vendor/utils/utils.py": {
+    "upstream_relative_path": "utils/utils.py",
+    "upstream_sha256": "4284247a874255b1605e403b93ffe6cfabe849f872133f5246b23eeeb68e2e08",
+    "public_sha256": "4284247a874255b1605e403b93ffe6cfabe849f872133f5246b23eeeb68e2e08",
+    "identical": true
+  },
+  "_vendor/utils/__init__.py": {
+    "upstream_relative_path": "utils/__init__.py",
+    "upstream_sha256": "6a52031819f1587e09bcff945beecdf7db1e0418b4af5195d61f1fd4444505e7",
+    "public_sha256": "6a52031819f1587e09bcff945beecdf7db1e0418b4af5195d61f1fd4444505e7",
+    "identical": true
+  },
+  "_vendor/policies/__init__.py": {
+    "upstream_relative_path": "policies/__init__.py",
+    "upstream_sha256": "92bc912c3133c0e08f84b90fcfd96d63c74b96a6e666dc6bd357557049ad62c3",
+    "public_sha256": "92bc912c3133c0e08f84b90fcfd96d63c74b96a6e666dc6bd357557049ad62c3",
+    "identical": true
+  },
+  "_vendor/policies/policies.py": {
+    "upstream_relative_path": "policies/policies.py",
+    "upstream_sha256": "b70a403cb9fc3a34213b55709e0eee473513808aca0cb4f589fc66484a5e6b2e",
+    "public_sha256": "b70a403cb9fc3a34213b55709e0eee473513808aca0cb4f589fc66484a5e6b2e",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/__init__.py": {
+    "upstream_relative_path": "ballbot_fast_rl/__init__.py",
+    "upstream_sha256": "836ec7d0d01923c673c0b1dfaee03d38fc264777b0627e81f196a7a186f3fe32",
+    "public_sha256": "836ec7d0d01923c673c0b1dfaee03d38fc264777b0627e81f196a7a186f3fe32",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/contracts.py": {
+    "upstream_relative_path": "ballbot_fast_rl/contracts.py",
+    "upstream_sha256": "d9d50a6b2f01b4a7ed09af3d56e57a308e30cd6059136c831454b1edfa55d48c",
+    "public_sha256": "d9d50a6b2f01b4a7ed09af3d56e57a308e30cd6059136c831454b1edfa55d48c",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/evaluate.py": {
+    "upstream_relative_path": "ballbot_fast_rl/evaluate.py",
+    "upstream_sha256": "db4fa25d30b3f2094e4cc01da08b4d4cfeac1e422175d47d4ea16a3c57661535",
+    "public_sha256": "db4fa25d30b3f2094e4cc01da08b4d4cfeac1e422175d47d4ea16a3c57661535",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/env.py": {
+    "upstream_relative_path": "ballbot_fast_rl/env.py",
+    "upstream_sha256": "7795a03597ac69d5c4666d405ce451249a58b39c2929c982970af9a38ce35111",
+    "public_sha256": "7795a03597ac69d5c4666d405ce451249a58b39c2929c982970af9a38ce35111",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/contact_validation/__init__.py": {
+    "upstream_relative_path": "ballbot_fast_rl/contact_validation/__init__.py",
+    "upstream_sha256": "45fdbd8d453e406da71e3ead40cad8a920501d38d0a2062104300faff497c5b6",
+    "public_sha256": "45fdbd8d453e406da71e3ead40cad8a920501d38d0a2062104300faff497c5b6",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/contact_validation/diagnostics.py": {
+    "upstream_relative_path": "ballbot_fast_rl/contact_validation/diagnostics.py",
+    "upstream_sha256": "21d97fb5be4463fdcfd9945ec47973883233cbb83f1d0ff903645dbfa5c4f7d5",
+    "public_sha256": "21d97fb5be4463fdcfd9945ec47973883233cbb83f1d0ff903645dbfa5c4f7d5",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/contact_validation/study.py": {
+    "upstream_relative_path": "ballbot_fast_rl/contact_validation/study.py",
+    "upstream_sha256": "b1cedb8a95b661143afb89abc02f7601440a06539642791a0d835191fe6930bc",
+    "public_sha256": "b1cedb8a95b661143afb89abc02f7601440a06539642791a0d835191fe6930bc",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/__init__.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/__init__.py",
+    "upstream_sha256": "930fc02e7baea0233bb4e2bdc74e514508821b17951deff35f226ab2a3e06712",
+    "public_sha256": "930fc02e7baea0233bb4e2bdc74e514508821b17951deff35f226ab2a3e06712",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/runner.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/runner.py",
+    "upstream_sha256": "eb0d9c94bfd5661c5a50f51e5c517642d95cc6a289e6ffeb2758248054e467ca",
+    "public_sha256": "eb0d9c94bfd5661c5a50f51e5c517642d95cc6a289e6ffeb2758248054e467ca",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/config.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/config.py",
+    "upstream_sha256": "7d49dc63bc88713d1e11a13fe943a76a23d7e3183ba9a1a97bae72280402be7e",
+    "public_sha256": "7d49dc63bc88713d1e11a13fe943a76a23d7e3183ba9a1a97bae72280402be7e",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/sensors.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/sensors.py",
+    "upstream_sha256": "aa9a5301d5f4228b86ca83e290e8d2ccd22cd0684a6bf152ce9fbcb630cec2cf",
+    "public_sha256": "aa9a5301d5f4228b86ca83e290e8d2ccd22cd0684a6bf152ce9fbcb630cec2cf",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/v3/variant.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/v3/variant.py",
+    "upstream_sha256": "20033c3f1ab7c26a77c019703c46ac8587b6a319be79f0f44aa4600e7684e254",
+    "public_sha256": "20033c3f1ab7c26a77c019703c46ac8587b6a319be79f0f44aa4600e7684e254",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/v3/__init__.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/v3/__init__.py",
+    "upstream_sha256": "ab3c0294d96437717bc2bd793a6dc01f438adeb805caf3802ae454d1f284aca1",
+    "public_sha256": "ab3c0294d96437717bc2bd793a6dc01f438adeb805caf3802ae454d1f284aca1",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/v3/identify.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/v3/identify.py",
+    "upstream_sha256": "a53b9c8ccb14665bce4438ffdd7764b8f56ccdafd915853837eb2fd0e5e92d54",
+    "public_sha256": "a53b9c8ccb14665bce4438ffdd7764b8f56ccdafd915853837eb2fd0e5e92d54",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/v3/config.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/v3/config.py",
+    "upstream_sha256": "45b44ff51541b0c6e1b19950b749d2917db85a26dca8c2a3da042dee19c6eeda",
+    "public_sha256": "45b44ff51541b0c6e1b19950b749d2917db85a26dca8c2a3da042dee19c6eeda",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/v4/variant.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/v4/variant.py",
+    "upstream_sha256": "07ea44aa5c2bd3f164c6ef912d73925924df0c47f7a0ea443001c78ecfd5ed5f",
+    "public_sha256": "07ea44aa5c2bd3f164c6ef912d73925924df0c47f7a0ea443001c78ecfd5ed5f",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/v4/__init__.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/v4/__init__.py",
+    "upstream_sha256": "585c5e3c317e59123fb7c9b5be723389862cca1eb6151d30d9b19159ad40a6f1",
+    "public_sha256": "585c5e3c317e59123fb7c9b5be723389862cca1eb6151d30d9b19159ad40a6f1",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/v2/variant.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/v2/variant.py",
+    "upstream_sha256": "cea66c8e31de801777049bd4540d84bca9323b56000037440b66aaade1dd1523",
+    "public_sha256": "cea66c8e31de801777049bd4540d84bca9323b56000037440b66aaade1dd1523",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/v2/__init__.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/v2/__init__.py",
+    "upstream_sha256": "4e7a14962a08ed1c61236dd063559a7bf7005cf40bb825c940422a2f735d5e06",
+    "public_sha256": "4e7a14962a08ed1c61236dd063559a7bf7005cf40bb825c940422a2f735d5e06",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/v2/config.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/v2/config.py",
+    "upstream_sha256": "64105aa71e4a7272245fc5f8b4081aeead2272019a420f2201c6266de79ed85e",
+    "public_sha256": "64105aa71e4a7272245fc5f8b4081aeead2272019a420f2201c6266de79ed85e",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/robust_control/v2/instrument.py": {
+    "upstream_relative_path": "ballbot_fast_rl/robust_control/v2/instrument.py",
+    "upstream_sha256": "e3a9dfab5fefdfb04834f27db2909c62e57109eb6b161a645bcfae18c85590ad",
+    "public_sha256": "e3a9dfab5fefdfb04834f27db2909c62e57109eb6b161a645bcfae18c85590ad",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/position_hold/__init__.py": {
+    "upstream_relative_path": "ballbot_fast_rl/position_hold/__init__.py",
+    "upstream_sha256": "2549a70f66bbc5b93fdb3114ef9084b877bbf995d2c4c793613d255fcded6978",
+    "public_sha256": "2549a70f66bbc5b93fdb3114ef9084b877bbf995d2c4c793613d255fcded6978",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/position_hold/core.py": {
+    "upstream_relative_path": "ballbot_fast_rl/position_hold/core.py",
+    "upstream_sha256": "0679a91a4c8a060e0a8716fefa7e8751d1efa6bae76ccb565e13ab0f2e1a3aea",
+    "public_sha256": "0679a91a4c8a060e0a8716fefa7e8751d1efa6bae76ccb565e13ab0f2e1a3aea",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/outer_loop/control.py": {
+    "upstream_relative_path": "ballbot_fast_rl/outer_loop/control.py",
+    "upstream_sha256": "e69f69c140c442c2ef7546530bb11968aefb5083b609d1975174d46dbeda5a1a",
+    "public_sha256": "e69f69c140c442c2ef7546530bb11968aefb5083b609d1975174d46dbeda5a1a",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/outer_loop/__init__.py": {
+    "upstream_relative_path": "ballbot_fast_rl/outer_loop/__init__.py",
+    "upstream_sha256": "5cd94101f88047a39a07fc9a8bac0d28e339d436f158492c3364f9321999048a",
+    "public_sha256": "5cd94101f88047a39a07fc9a8bac0d28e339d436f158492c3364f9321999048a",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/outer_loop/pilot.py": {
+    "upstream_relative_path": "ballbot_fast_rl/outer_loop/pilot.py",
+    "upstream_sha256": "1ebea0bcfa058b7c285b43d9a7f31cc24c2c33c0e52059552903a2aac6a88767",
+    "public_sha256": "1ebea0bcfa058b7c285b43d9a7f31cc24c2c33c0e52059552903a2aac6a88767",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/outer_loop/evaluation.py": {
+    "upstream_relative_path": "ballbot_fast_rl/outer_loop/evaluation.py",
+    "upstream_sha256": "3eeaea56b2294aa71a060e314af949321a8349b650b383156261af5aad174f12",
+    "public_sha256": "3eeaea56b2294aa71a060e314af949321a8349b650b383156261af5aad174f12",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/results/outer_loop_position_control/frozen_controller.json": {
+    "upstream_relative_path": "ballbot_fast_rl/results/outer_loop_position_control/frozen_controller.json",
+    "upstream_sha256": "f43e6b05e6fce424e7c424d03b6f98a8bb994f7da2dab32dce584b28aeced072",
+    "public_sha256": "f43e6b05e6fce424e7c424d03b6f98a8bb994f7da2dab32dce584b28aeced072",
+    "identical": true
+  },
+  "_vendor/ballbot_fast_rl/results/position_hold_20261029/selection_fixed_sensor.json": {
+    "upstream_relative_path": "ballbot_fast_rl/results/position_hold_20261029/selection_fixed_sensor.json",
+    "upstream_sha256": "218d3aee88470aff04c6246ea3d8e299dae2674210b83c62c90dde2e1f8bec3a",
+    "public_sha256": "22d0e5594a2ea5409569b0ceda56622471f84f37e53512eca804f9b914132e9d",
+    "identical": false
+  },
+  "_vendor/ballbot_fast_rl/results/position_hold_20261029/candidate_export/metadata.json": {
+    "upstream_relative_path": "ballbot_fast_rl/results/position_hold_20261029/candidate_export/metadata.json",
+    "upstream_sha256": "32112e6de56feaf5fe0dcfbdad128c01377113f3efc028b3214b5cc09f48f5af",
+    "public_sha256": "697c7aa0842c339d8869f28d53757d8b40d89ec1794efadc9b3d617e6f7b00c7",
+    "identical": false
+  }
+}

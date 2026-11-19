@@ -1,0 +1,43 @@
+{
+  "id": "LARGE8_STANDARD_PPO_V1",
+  "regime": "PRIVILEGED_V4_RESIDUAL_PPO",
+  "obs_dim": 31,
+  "action_dim": 3,
+  "policy_dt_s": 0.01,
+  "native_dt_s": 0.002,
+  "delta_scale": 0.25,
+  "network": [
+    64,
+    64
+  ],
+  "activation": "Tanh",
+  "log_std_init": -2.3,
+  "training_env_steps": 500000,
+  "n_steps": 512,
+  "batch_size": 64,
+  "n_epochs": 5,
+  "learning_rate": 0.0003,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "clip_range": 0.2,
+  "ent_coef": 0.0,
+  "vf_coef": 0.5,
+  "max_grad_norm": 0.5,
+  "target_kl": 0.03,
+  "episode_duration_s": 30.0,
+  "device": "cpu",
+  "workers": "largest isolated efficient validated count",
+  "checkpoint_steps": [
+    0,
+    10000,
+    100000,
+    250000,
+    500000
+  ],
+  "native_wall_budget_s": 2400,
+  "train_wall_limit_s": 900,
+  "conditions": [
+    "STANDARD"
+  ],
+  "training_runs": 1
+}

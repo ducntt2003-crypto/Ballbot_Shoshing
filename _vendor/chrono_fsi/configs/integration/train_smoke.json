@@ -1,0 +1,9 @@
+{
+  "mode": "rigid",
+  "timesteps": 32,
+  "n_steps": 16,
+  "batch_size": 16,
+  "n_epochs": 1,
+  "seed": 20261027,
+  "max_duration_s": 0.04
+}

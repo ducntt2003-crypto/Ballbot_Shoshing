@@ -1,0 +1,15 @@
+{
+  "hfield_storage_dtype": "float32",
+  "representation": "Physical ideal world heights retained within float32 quantization, not bitwise-identical normalized storage",
+  "original_trial_geometry": "pre-normalization; out-of-range raised-feature data not visited/certified",
+  "new_code_validation": "3s native pilot plus1s graphical smoke; no rerun of completed16/26s trials",
+  "matched_3s_max_absolute_differences": {
+    "t_s": 0.0,
+    "XY_m": 2.9943260978354536e-11,
+    "velocity_m_s": 3.72646344337646e-10,
+    "rpy_rad": 1.1796097432181796e-10,
+    "modal_q_m": 4.588882052125598e-11,
+    "E_J": 1.545843845724565e-11,
+    "tau_Nm": 1.4901161193847656e-07
+  }
+}

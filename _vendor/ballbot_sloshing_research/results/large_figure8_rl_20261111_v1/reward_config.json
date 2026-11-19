@@ -1,0 +1,31 @@
+{
+  "id": "TRACK8V_TRACKING_MODAL_EXP_REWARD_V1",
+  "rate": "exp(-sum weightednormalizedquadraticcosts), dt-integrated; invalid -5, no positiveafterinvalid",
+  "weights": {
+    "position": 1.0,
+    "velocity": 0.1,
+    "balance": 0.2,
+    "slosh": 0.05,
+    "effort": 0.01,
+    "variation": 0.001
+  },
+  "scales": {
+    "position_m": 0.1,
+    "velocity_m_s": 0.1480960979386122,
+    "tilt_rad": 0.12,
+    "energy_J": 0.0002728148812576366,
+    "torque_Nm": 10.0,
+    "delta": 0.25
+  },
+  "alive_rate": 1.0,
+  "terminal_penalty": 5.0,
+  "source": {
+    "task_position_gate_m": 0.1,
+    "reference_max_speed_bound_m_s": 0.1480960979386122,
+    "safety_tilt": 0.12,
+    "modal_q_reference_m": 0.003,
+    "V4_5s_RMSE_m": 0.06527145440690486,
+    "V4_5s_mean_E_J": 4.479641800196628e-05
+  },
+  "terminal_penalty_justification": "5s episode maxvalidreturn5, failurepenalty5 cancels maximumremainingepisodegain; structuralcheck not formalnoexploitproof"
+}

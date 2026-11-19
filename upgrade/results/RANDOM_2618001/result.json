@@ -1,0 +1,128 @@
+{
+  "level": "RANDOM",
+  "seed": 2618001,
+  "controller": "Teleop_FF_Heading",
+  "physical_valid": true,
+  "completed": true,
+  "native_steps": 13000,
+  "native_stop_s": 25.99999999999647,
+  "last_recorded_s": 25.99999999999647,
+  "termination": "TIME_LIMIT",
+  "error": null,
+  "invalid_counts": {},
+  "contact_stats": {
+    "calls": 65005,
+    "accepted": 64994,
+    "max_search_triangles": 98,
+    "max_active_triangles": 16,
+    "unsupported": 0,
+    "boundary": 0,
+    "search_cap": 0,
+    "deep": 0,
+    "multipatch": 0,
+    "ambiguous": 0,
+    "forced_abort": 0,
+    "numeric_uncertain": 0,
+    "exact_calls": 0,
+    "exact_resolved": 0,
+    "exact_rejected": 0,
+    "selector_records": []
+  },
+  "wall_s": 17.105692631000238,
+  "traversal": {
+    "passed": true,
+    "ordered_stage_times_s": [
+      0.002,
+      7.263999999999422,
+      19.84399999999988
+    ],
+    "horizontal_displacement_m": 0.7096282615429012,
+    "cumulative_3D_distance_m": 1.187994510500164,
+    "elevation_range_m": 0.006111847835427259,
+    "net_elevation_m": 0.00404236358362417,
+    "region": {
+      "approach_x_max": 0.14,
+      "obstacle_x_min": 0.18,
+      "obstacle_x_max": 0.55,
+      "exit_x_min": 0.62,
+      "half_width_m": 0.25
+    },
+    "physical_valid": true,
+    "route_completed": true
+  },
+  "height_range_m": [
+    -0.0014968299074098468,
+    0.0015000001294538379
+  ],
+  "geometry_representation": "normalized float32 world surface",
+  "total_mass_kg": 4.737446930518876,
+  "metrics": {
+    "roll_RMS_rad": 0.009531949833142223,
+    "pitch_RMS_rad": 0.009866467237666866,
+    "tilt_max_rad": 0.03194576703011799,
+    "velocity_RMSE_m_s": 0.037615952593334195,
+    "q_observed_peak_m": 0.0076811700452877225,
+    "ROM_guard_triggered": false,
+    "E_mean_J": 0.0009010893167372293,
+    "E_peak_J": 0.003004341733356221,
+    "torque_RMS_Nm": 6.09206059005842,
+    "torque_peak_Nm": 10.0,
+    "ground_contact_fraction": 0.9999230769230769,
+    "recovery": [
+      {
+        "change_s": 0,
+        "until_next_change_s": 2,
+        "recovery_s": null,
+        "censored": true,
+        "tolerance_m_s": 0.015,
+        "yaw_tolerance_rad_s": 0.04,
+        "hold_s": 0.5
+      },
+      {
+        "change_s": 2,
+        "until_next_change_s": 16,
+        "recovery_s": null,
+        "censored": true,
+        "tolerance_m_s": 0.015,
+        "yaw_tolerance_rad_s": 0.04,
+        "hold_s": 0.5
+      },
+      {
+        "change_s": 16,
+        "until_next_change_s": 18,
+        "recovery_s": null,
+        "censored": true,
+        "tolerance_m_s": 0.015,
+        "yaw_tolerance_rad_s": 0.04,
+        "hold_s": 0.5
+      },
+      {
+        "change_s": 18,
+        "until_next_change_s": 20,
+        "recovery_s": null,
+        "censored": true,
+        "tolerance_m_s": 0.015,
+        "yaw_tolerance_rad_s": 0.04,
+        "hold_s": 0.5
+      },
+      {
+        "change_s": 20,
+        "until_next_change_s": 22,
+        "recovery_s": null,
+        "censored": true,
+        "tolerance_m_s": 0.015,
+        "yaw_tolerance_rad_s": 0.04,
+        "hold_s": 0.5
+      },
+      {
+        "change_s": 22,
+        "until_next_change_s": 25.99999999999647,
+        "recovery_s": null,
+        "censored": true,
+        "tolerance_m_s": 0.015,
+        "yaw_tolerance_rad_s": 0.04,
+        "hold_s": 0.5
+      }
+    ]
+  }
+}

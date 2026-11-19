@@ -1,0 +1,1 @@
+{"name":"bounded_idle_forward_stop_reverse_left_right_neutral_v1","duration_s":16,"events":[{"t":0,"keys":[]},{"t":2,"keys":["UP"]},{"t":5,"keys":["SPACE"]},{"t":7,"keys":["DOWN"]},{"t":9,"keys":["SPACE"]},{"t":10,"keys":["LEFT"]},{"t":12,"keys":["RIGHT"]},{"t":14,"keys":[]}]}

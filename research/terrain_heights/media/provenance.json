@@ -1,0 +1,13 @@
+{
+  "source": "first registered seed2611801, all available conditions",
+  "frames": 151,
+  "fps": 5,
+  "display_includes_endpoint": true,
+  "actual_native_span_s": 30,
+  "backend": "CPU OSMesa",
+  "render_wall_s": 59.711467142000174,
+  "new_physics_steps": 0,
+  "new_training_steps": 0,
+  "wireframe": "Visualization on actual collision surface, not a separate obstacle",
+  "surface": "ROM-based visualization, not CFD"
+}

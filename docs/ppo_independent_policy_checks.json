@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "GAE_max_gap": 8.940696716308594e-08,
+  "behavior_replay_max_gap": 1.430511474609375e-06,
+  "behavior_replayed_buffers": 5,
+  "actor_critic_parameter_L2": {
+    "actor": 4.402963233660819,
+    "critic": 2.138907789474255,
+    "log_std": 0.211698879914233
+  },
+  "raw_received_rows_expected": 499992
+}

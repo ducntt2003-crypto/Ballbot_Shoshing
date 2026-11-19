@@ -1,0 +1,220 @@
+{
+  "parameters": {
+    "volume": 0.0005,
+    "radius": 0.07,
+    "rho": 998.0,
+    "zeta": 0.02,
+    "frequency_scale": 1.0,
+    "depth": 0.03248060063099905,
+    "mass": 0.499,
+    "moving_mass": 0.33888496631368126,
+    "fixed_mass": 0.16011503368631874,
+    "omega": 13.375241111972233,
+    "frequency_Hz": 2.12873573801632,
+    "k": 60.62552916836369,
+    "c": 0.18130672534672299,
+    "model": "linear_cylinder_first_mode_2D_spring_v1",
+    "mass_accounting": "one moving mass with two slides, not one mass per axis",
+    "damping": "ASSUMED",
+    "moment_model": "COM-height approximation; not full modal pressure-moment equivalence"
+  },
+  "records": [
+    {
+      "case": "static",
+      "dt_s": 0.002,
+      "frequency_Hz": 2.1289537712895377,
+      "peak_q_m": 0.001999284709535823,
+      "final_q_m": -0.0006847717909606057,
+      "energy_residual_J": 6.349027748854541e-13,
+      "energy_relative": 5.2362658404371205e-09,
+      "work_J": 0.0,
+      "damping_loss_J": 0.00010693849724275824
+    },
+    {
+      "case": "impulse",
+      "dt_s": 0.002,
+      "frequency_Hz": 2.1276595744680855,
+      "peak_q_m": 0.0002864796371216546,
+      "final_q_m": -0.00010453085558910868,
+      "energy_residual_J": 3.764384817562391e-10,
+      "energy_relative": 0.00014525438796506563,
+      "work_J": 2.6280184048629427e-06,
+      "damping_loss_J": 2.295397024268819e-06
+    },
+    {
+      "case": "harmonic_low",
+      "dt_s": 0.002,
+      "frequency_Hz": 1.5078407720144755,
+      "peak_q_m": 0.0003400043805421559,
+      "final_q_m": 6.511645282960394e-05,
+      "energy_residual_J": 5.474737315238915e-15,
+      "energy_relative": 1.5622059858118105e-09,
+      "work_J": 3.465796654686761e-06,
+      "damping_loss_J": 2.1396270590981057e-06
+    },
+    {
+      "case": "harmonic_resonant",
+      "dt_s": 0.002,
+      "frequency_Hz": 2.1289537712895377,
+      "peak_q_m": 0.0018346811355432406,
+      "final_q_m": -0.0018256580077312587,
+      "energy_residual_J": 5.592840372683344e-13,
+      "energy_relative": 5.480960319318597e-09,
+      "work_J": 0.00019497235160148495,
+      "damping_loss_J": 9.293110304993186e-05
+    },
+    {
+      "case": "tilt",
+      "dt_s": 0.002,
+      "frequency_Hz": 2.1289537712895377,
+      "peak_q_m": 0.0021264171589615664,
+      "final_q_m": -0.0014721233140693804,
+      "energy_residual_J": 1.9088907294044152e-13,
+      "energy_relative": 5.937086346247863e-09,
+      "work_J": 0.0,
+      "damping_loss_J": 3.2151978755080934e-05
+    },
+    {
+      "case": "static",
+      "dt_s": 0.001,
+      "frequency_Hz": 2.128306476132563,
+      "peak_q_m": 0.0019998211374918297,
+      "final_q_m": -0.0006847717704348302,
+      "energy_residual_J": 5.554141402439733e-14,
+      "energy_relative": 4.580695194441337e-10,
+      "work_J": 0.0,
+      "damping_loss_J": 0.00010693849701534767
+    },
+    {
+      "case": "impulse",
+      "dt_s": 0.001,
+      "frequency_Hz": 2.1283064761325634,
+      "peak_q_m": 0.00028647960196871345,
+      "final_q_m": -0.00010454689604661608,
+      "energy_residual_J": 9.412889144594375e-11,
+      "energy_relative": 3.63155634303953e-05,
+      "work_J": 2.6282558436746638e-06,
+      "damping_loss_J": 2.295356815946683e-06
+    },
+    {
+      "case": "harmonic_low",
+      "dt_s": 0.001,
+      "frequency_Hz": 1.5078407720144753,
+      "peak_q_m": 0.0003400220248157007,
+      "final_q_m": 6.511644116623032e-05,
+      "energy_residual_J": 5.032650491276162e-16,
+      "energy_relative": 1.4360083468470845e-10,
+      "work_J": 3.465796572970304e-06,
+      "damping_loss_J": 2.139627051035121e-06
+    },
+    {
+      "case": "harmonic_resonant",
+      "dt_s": 0.001,
+      "frequency_Hz": 2.128306476132563,
+      "peak_q_m": 0.0018347015003205742,
+      "final_q_m": -0.001825657992822224,
+      "energy_residual_J": 4.8559965185220044e-14,
+      "energy_relative": 4.758856398634318e-10,
+      "work_J": 0.00019497235292112675,
+      "damping_loss_J": 9.293110373333244e-05
+    },
+    {
+      "case": "tilt",
+      "dt_s": 0.001,
+      "frequency_Hz": 2.128306476132563,
+      "peak_q_m": 0.002126496058664324,
+      "final_q_m": -0.0014721233028146161,
+      "energy_residual_J": 1.6699274883909265e-14,
+      "energy_relative": 5.193856047025096e-10,
+      "work_J": 0.0,
+      "damping_loss_J": 3.215197868670814e-05
+    },
+    {
+      "case": "static",
+      "dt_s": 0.0005,
+      "frequency_Hz": 2.128306476132563,
+      "peak_q_m": 0.0019999552798857065,
+      "final_q_m": -0.0006847717690476669,
+      "energy_residual_J": 3.96733969461327e-15,
+      "energy_relative": 3.2720041779722336e-11,
+      "work_J": 0.0,
+      "damping_loss_J": 0.00010693849699012367
+    },
+    {
+      "case": "impulse",
+      "dt_s": 0.0005,
+      "frequency_Hz": 2.128306476132563,
+      "peak_q_m": 0.0002864795839497636,
+      "final_q_m": -0.00010455491732183134,
+      "energy_residual_J": 2.3533328539649404e-11,
+      "energy_relative": 9.078599310882264e-06,
+      "work_J": 2.62831521917848e-06,
+      "damping_loss_J": 2.29534669060433e-06
+    },
+    {
+      "case": "harmonic_low",
+      "dt_s": 0.0005,
+      "frequency_Hz": 1.5080681646810434,
+      "peak_q_m": 0.0003400220246112801,
+      "final_q_m": 6.511644043916153e-05,
+      "energy_residual_J": 3.6523213652658176e-17,
+      "energy_relative": 1.0421474690709766e-11,
+      "work_J": 3.4657965678563527e-06,
+      "damping_loss_J": 2.13962705046071e-06
+    },
+    {
+      "case": "harmonic_resonant",
+      "dt_s": 0.0005,
+      "frequency_Hz": 2.1286300745020523,
+      "peak_q_m": 0.0018347323327878062,
+      "final_q_m": -0.0018256579917741518,
+      "energy_residual_J": 3.461952404436308e-15,
+      "energy_relative": 3.3926989629297296e-11,
+      "work_J": 0.00019497235299524278,
+      "damping_loss_J": 9.293110376723961e-05
+    },
+    {
+      "case": "tilt",
+      "dt_s": 0.0005,
+      "frequency_Hz": 2.128306476132563,
+      "peak_q_m": 0.002126496058608135,
+      "final_q_m": -0.001472123302054001,
+      "energy_residual_J": 1.1929476503858005e-15,
+      "energy_relative": 3.710339765821683e-11,
+      "work_J": 0.0,
+      "damping_loss_J": 3.215197867912419e-05
+    }
+  ],
+  "native": [
+    {
+      "tilt_rad": 0,
+      "max_ODE_position_gap_m": 4.2825985813177425e-18,
+      "max_force_gap_N": 1.3877787807814457e-17,
+      "final_q_m": -0.0006847717909606049,
+      "expected_static_q_m": 0.0
+    },
+    {
+      "tilt_rad": 0.02,
+      "max_ODE_position_gap_m": 4.119968255444917e-18,
+      "max_force_gap_N": 8.891536662303994e-16,
+      "final_q_m": 0.000787351523108775,
+      "expected_static_q_m": 0.0010966468874754204
+    }
+  ],
+  "free_cart_momentum_max_kg_m_s": 1.9081958235744878e-17,
+  "free_cart_energy_residual_J": 1.4582389021896436e-09,
+  "checks": {
+    "static_decay": true,
+    "frequency": true,
+    "energy": true,
+    "native_ODE": true,
+    "native_wrench": true,
+    "timestep_amplitude": true,
+    "free_cart_momentum": true,
+    "free_cart_energy": true
+  },
+  "gate1": true,
+  "work_accounting": "same RK4 stages as state",
+  "scope": "Internal equation/numerical validation of an approximate first-mode model, not physical water/CFD validation",
+  "wall_s": 6.3780054980002205
+}

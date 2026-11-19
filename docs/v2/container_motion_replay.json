@@ -1,0 +1,12 @@
+{
+  "source": "upgrade/results/MILD_2618001/trace.npz",
+  "samples": 13000,
+  "start_s": 0.002,
+  "end_s": 25.99999999999647,
+  "linear_velocity_point": "WORLD tank body origin, not COM",
+  "position_interpolation": "C1 CubicHermite, measured position and linear velocity",
+  "orientation_interpolation": "C2 RotationSpline, body rates rotated into WORLD",
+  "spline_vs_measured_omega_RMS_rad_s": 1.4416388711578108e-05,
+  "used_in_independent_fluid": false,
+  "case6_status": "BLOCKED_STATIC_GATE"
+}

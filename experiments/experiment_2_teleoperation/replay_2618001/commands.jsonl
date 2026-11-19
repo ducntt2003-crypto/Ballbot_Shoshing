@@ -1,0 +1,6 @@
+{"t": 0, "keys": [], "actual_sim_t": 0.0}
+{"t": 2, "keys": ["UP"], "actual_sim_t": 2.0000000000000013}
+{"t": 5, "keys": ["SPACE"], "actual_sim_t": 4.999999999999671}
+{"t": 7, "keys": ["DOWN"], "actual_sim_t": 6.999999999999451}
+{"t": 9, "keys": ["SPACE"], "actual_sim_t": 8.999999999999675}
+{"t": 10, "keys": ["LEFT"], "actual_sim_t": 10.000000000000009}

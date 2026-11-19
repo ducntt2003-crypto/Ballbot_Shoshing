@@ -1,0 +1,17 @@
+[
+  {
+    "case": "dx8_dt50",
+    "returncode": 0,
+    "wall_s": 4.976503859999866
+  },
+  {
+    "case": "dx6_dt50",
+    "returncode": 0,
+    "wall_s": 5.978806036999231
+  },
+  {
+    "case": "dx6_dt25",
+    "returncode": 0,
+    "wall_s": 11.995159652999973
+  }
+]

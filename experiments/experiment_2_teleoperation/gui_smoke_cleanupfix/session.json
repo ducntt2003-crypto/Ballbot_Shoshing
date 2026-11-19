@@ -1,0 +1,13 @@
+{
+  "termination": "BOUNDED_GUI_SMOKE_END",
+  "wall_s": 2.0005844610000167,
+  "simulation_s": 2.0000000000000013,
+  "frames": 51,
+  "rendered_FPS": 25.492550299279554,
+  "policy_steps": 200,
+  "native_steps": 1000,
+  "max_scheduler_lag_s": 0.002974909999011288,
+  "measured_realtime_factor": 0.9997078548737086,
+  "human_input_observed": false,
+  "notes": "Smoke mode verifies window/render/closed-loop only, not human usability or sustained realtime."
+}

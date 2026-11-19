@@ -1,0 +1,6 @@
+{
+  "configs/protocol.json": "d7aa304c91f88dbf4400ce2b6db67fae34bdf365ed23495b1271d5c08bcafea9",
+  "configs/keyboard_script.json": "27a4fed49d7be72f791aafd96d38bd7bfd0dd7eab5e225d765b31a1e8a55698a",
+  "sloshbot/runtime.py": "7556597f02bf4b643bf707ae98364d20575599a21b3f90ef8acbc5b23a7e85c6",
+  "sloshbot/experiment.py": "846af4ba6543d80ef0762b4e0e34591af11142d9b703bf7f98eadbacec176112"
+}

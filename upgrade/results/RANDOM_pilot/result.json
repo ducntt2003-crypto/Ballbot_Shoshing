@@ -1,0 +1,81 @@
+{
+  "level": "RANDOM",
+  "seed": 2618001,
+  "controller": "Teleop_FF_Heading",
+  "physical_valid": true,
+  "completed": true,
+  "native_steps": 1000,
+  "native_stop_s": 2.0000000000000013,
+  "last_recorded_s": 2.0000000000000013,
+  "termination": "TIME_LIMIT",
+  "error": null,
+  "invalid_counts": {},
+  "contact_stats": {
+    "calls": 5005,
+    "accepted": 4994,
+    "max_search_triangles": 98,
+    "max_active_triangles": 16,
+    "unsupported": 0,
+    "boundary": 0,
+    "search_cap": 0,
+    "deep": 0,
+    "multipatch": 0,
+    "ambiguous": 0,
+    "forced_abort": 0,
+    "numeric_uncertain": 0,
+    "exact_calls": 0,
+    "exact_resolved": 0,
+    "exact_rejected": 0,
+    "selector_records": []
+  },
+  "wall_s": 1.2932672300003105,
+  "traversal": {
+    "passed": false,
+    "ordered_stage_times_s": [
+      0.002
+    ],
+    "horizontal_displacement_m": 0.007318315460107109,
+    "cumulative_3D_distance_m": 0.05400552088241043,
+    "elevation_range_m": 0.006111847835427259,
+    "net_elevation_m": 0.005343255831625954,
+    "region": {
+      "approach_x_max": 0.14,
+      "obstacle_x_min": 0.18,
+      "obstacle_x_max": 0.55,
+      "exit_x_min": 0.62,
+      "half_width_m": 0.25
+    },
+    "physical_valid": true,
+    "route_completed": true
+  },
+  "height_range_m": [
+    -0.0014968299074098468,
+    0.0015000001294538379
+  ],
+  "geometry_representation": "normalized float32 world surface",
+  "total_mass_kg": 4.737446930518876,
+  "metrics": {
+    "roll_RMS_rad": 0.006590107125339502,
+    "pitch_RMS_rad": 0.006502957283647932,
+    "tilt_max_rad": 0.0149747352804177,
+    "velocity_RMSE_m_s": 0.026764478911121648,
+    "q_observed_peak_m": 0.0059025523223089505,
+    "ROM_guard_triggered": false,
+    "E_mean_J": 0.0006512335606282128,
+    "E_peak_J": 0.00165000646012368,
+    "torque_RMS_Nm": 0.7243939495282848,
+    "torque_peak_Nm": 1.472158133983612,
+    "ground_contact_fraction": 0.999,
+    "recovery": [
+      {
+        "change_s": 0,
+        "until_next_change_s": 2.0000000000000013,
+        "recovery_s": null,
+        "censored": true,
+        "tolerance_m_s": 0.015,
+        "yaw_tolerance_rad_s": 0.04,
+        "hold_s": 0.5
+      }
+    ]
+  }
+}

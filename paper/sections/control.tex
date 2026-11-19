@@ -1,0 +1,50 @@
+\section{Control Methods}
+\subsection{Classical cascades and reference feedforward}
+The historical PID adapter regulates attitude with bumpless derivative-history initialization. Its default reference is level attitude; it is not a complete figure-eight position controller. No undocumented tuning procedure is assigned to it. Its balance evidence is retained as context, but it is not silently promoted to a tracking baseline.
+
+Cascade V2 forms a desired planar acceleration from position and velocity errors and an integral state. A heading rotation and the identified acceleration-to-tilt map convert that command into desired lean. Tilt magnitude and slew limits constrain the target, and an inner attitude controller allocates motor commands. V2 conditionally accepts integration: a proposed update is rejected when it worsens tilt-amplitude or motor-output constraint violation, while inward unwinding remains possible. This is output-aware anti-windup rather than an unconstrained integral controller.
+
+V3 inherits that structure and reduces the inner angular-rate derivative gain, retaining low-frequency proportional and integral action. The source sets the derivative coefficient to $1.1$, versus the inherited $2$ convention, through a factor $0.55$.\claim{C08} Its intent is bandwidth reduction; the study does not infer improved tracking on every task from that design choice. Reference feedforward V2\_FFv1 additionally uses desired velocity in the velocity error and adds reference acceleration through the proportional acceleration channel. Integral updates retain actual position error. Thus acceleration feedforward is not accumulated as a fictitious position offset.
+
+\subsection{Privileged modal feedback V4}
+The controller denoted V4 here is specifically the centroid/modal feedback implementation, not an unrelated historical heading-cascade class with a similar version label. It builds a nominal reference state from current reference position, velocity, acceleration, heading, an acceleration-related lean target, and a static modal displacement estimate. A frozen identified state map and gain matrix generate a motor-space correction. The design targets a growing fluid-dominant local mode, preserving the backbone and physical payload damping.
+
+V4 limits its correction through a common scalar factor and available motor headroom. Its nominal residual authority is $0.3$ Nm per motor before composition. It reads true modal and broader native/controller state, so its information regime is privileged. The identified frozen-time local design is not a nonlinear global stability proof. Its full-horizon evidence must therefore come from the recorded trials and their guards, not from the pole-placement construction alone.\claim{C09}
+
+\subsection{Finite-search teachers}
+Tracking-aware teachers evaluate bounded actions using cloned native states and controller memory. The archived sequence progressively introduces global reference anchoring, tracking-prefix constraints, energy comparisons to a matched V4 trajectory, and continuation logic. These are successive engineering experiments, not independently replicated successful controller families.
+
+The representative U supervisor separates physical admissibility, absolute task tracking, and relative performance. OPTIMIZE selects a feasible plan satisfying the registered tracking and energy conditions. PERFORMANCE\_DEGRADED\_CONTINUATION permits admissible continuation when the stricter relative performance condition cannot be met. VALIDATED\_BACKUP selects a supported zero residual, and SAFE\_STOP halts advancement if continuation lacks support. A finite prediction tail and a finite collection of backup tests do not establish an invariant safe set. Native search is offline: decision runtime can exceed the action hold period.
+
+Clone ownership is essential to that interpretation. An earlier callable closure could retain a parent-bound controller despite copying an environment. Later checks restore owned controller memory, active integration state, warmstart, action hold, and reference clock. These repairs support sequential tested branches, not unrestricted concurrent global callbacks. Historical contaminated teacher results are not accepted as demonstrations merely because later infrastructure passes regression.
+
+\subsection{Residual PPO and exact mixture likelihood}
+The later learning experiment keeps V4 and its V2\_FFv1 backbone frozen. For raw policy action $a\in\mathbb R^3$, the interface is
+\begin{align}
+ \delta&=0.25\operatorname{clip}(a,-1,1),\\
+ u&=\operatorname{clip}(u_{V4}+\delta,-1,1),\\
+ \tau&=-10\operatorname{clip}(u_b+0.03u,-1,1).
+\end{align}
+The additional nominal authority is at most $0.075$ Nm per motor, and clipping can reduce actual incremental torque. Both actor and backbone are privileged. The observation contains the frozen robot/reference features, true modal coordinates and velocities, desired acceleration, and reference phase: $31$ float32 features with fixed scales and clipping. Actor and critic use separate $64\times64$ Tanh branches. There is no camera encoder, recurrent state, or running observation normalizer in this contract.\claim{C10}
+
+Standard PPO uses a diagonal Gaussian. The controlled alternative uses
+\begin{equation}
+ p_\theta(a|s)=\sum_{j=0}^{6}w_j\mathcal N(a;\mu_\theta(s)+b_j,\operatorname{diag}\sigma_\theta^2),
+\end{equation}
+with $w_0=0.7$, six weights $0.05$, and offsets $b_j=\pm0.5e_i$ along motor axes. Offsets and weights are fixed, while the network mean and three log standard deviations are trained. PPO stores raw preclip actions and uses the full marginal log-sum-exp density, not the density of a sampled component. Deterministic evaluation returns the central mean, without asserting it is always the mixture's global mode.\claim{C11}
+
+Conditional samples are independent at the policy period. The mixture adds neither action persistence nor a temporal exploration state. It increases marginal variance and multimodality together, so those effects are confounded. Entropy is estimated using a fixed private antithetic Monte Carlo bank; it is not exact mixture entropy. The entropy coefficient remains zero, so this approximation affects diagnostic logging rather than an entropy-regularized update. Ratios and approximate KL use the actual marginalized policy density. These details preserve a valid distribution contract without implying that exploration geometry alone determines performance.
+\input{tables/controller}
+\input{tables/ppo}
+
+\subsection{Reward and policy update contract}
+For each policy interval, reward is the sum of five sampled native rates times $0.002$ s. With $e_p,e_v$ the planar tracking errors, $\theta$ the roll/pitch vector, and $\Delta\delta$ the change from the previous policy residual, the implemented rate is $\exp(-C)$, where
+\begin{align}
+ C={}&\frac{\|e_p\|^2}{0.1^2}+0.1\frac{\|e_v\|^2}{s_v^2}
+ +0.2\frac{\|\theta\|^2}{0.12^2}+0.05\frac{E}{E_r}\nonumber\\
+ &+\frac{0.01}{3}\sum_i(\tau_i/10)^2
+ +\frac{0.001}{3}\sum_i(\Delta\delta_i/0.25)^2.
+\end{align}
+Here $s_v=0.1480960979386122$ m/s and $E_r=0.0002728148812576366$ J. Invalid termination receives $-5$, with no subsequent positive reward. These quadratic quantities are costs inside an exponential, not additive negative reward terms. There is no separate residual-magnitude penalty or path-length bonus.\claim{C26}
+
+For stored raw actions, the PPO ratio is $r_t=\exp(\log p_\theta(a_t|s_t)-\log p_{old}(a_t|s_t))$. The actor objective averages $\min(r_t\hat A_t,\operatorname{clip}(r_t,1-\epsilon,1+\epsilon)\hat A_t)$ with $\epsilon=0.2$. GAE uses $\hat A_t=\sum_l(\gamma\lambda)^l\delta_{t+l}^{TD}$, respecting terminal masks and the recorded time-limit bootstrap. Value regression, advantage normalization, global gradient clipping, and target-KL early stopping follow the frozen implementation. The mixture changes the density family, not these optimizer rules. This equation-level contract is checked against archived rollout actions, values, rewards, and old log probabilities rather than inferred from a training-return curve.

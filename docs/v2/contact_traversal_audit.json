@@ -1,0 +1,82 @@
+[
+  {
+    "level": "FLAT",
+    "pre_obstacle_ball_z_m": 0.08446711957369585,
+    "crest_ball_z_m": 0.08444760368441881,
+    "post_obstacle_ball_z_m": 0.08450362057913528,
+    "crest_minus_pre_m": -1.9515889277038623e-05,
+    "ground_contact_gap_min_m": -0.005594133673833254,
+    "ground_contact_gap_max_m": -0.005431948507194417,
+    "normal_force_N_range": [
+      46.22224562707464,
+      46.80848497855694
+    ],
+    "normal_abs_z_min": 1.0,
+    "queries": 125,
+    "terrain_solref": [
+      0.02,
+      1.0
+    ],
+    "scope": "Offline native contact queries at recorded states after1s; no integration. Negative distance is compliant penetration, not an escape."
+  },
+  {
+    "level": "BUMPS",
+    "pre_obstacle_ball_z_m": 0.08446711957369585,
+    "crest_ball_z_m": 0.08626477091358174,
+    "post_obstacle_ball_z_m": 0.08451345163366195,
+    "crest_minus_pre_m": 0.0017976513398858945,
+    "ground_contact_gap_min_m": -0.005633844767023763,
+    "ground_contact_gap_max_m": -0.005375861254183156,
+    "normal_force_N_range": [
+      46.216575871880316,
+      46.810997648129884
+    ],
+    "normal_abs_z_min": 0.9998319960816243,
+    "queries": 125,
+    "terrain_solref": [
+      0.02,
+      1.0
+    ],
+    "scope": "Offline native contact queries at recorded states after1s; no integration. Negative distance is compliant penetration, not an escape."
+  },
+  {
+    "level": "SLOPES",
+    "pre_obstacle_ball_z_m": 0.08446711957369585,
+    "crest_ball_z_m": 0.08629826811991907,
+    "post_obstacle_ball_z_m": 0.08451270653038166,
+    "crest_minus_pre_m": 0.001831148546223224,
+    "ground_contact_gap_min_m": -0.00561371535797861,
+    "ground_contact_gap_max_m": -0.00539845354117674,
+    "normal_force_N_range": [
+      46.1934616926197,
+      46.78048250169804
+    ],
+    "normal_abs_z_min": 0.9998117147564453,
+    "queries": 125,
+    "terrain_solref": [
+      0.02,
+      1.0
+    ],
+    "scope": "Offline native contact queries at recorded states after1s; no integration. Negative distance is compliant penetration, not an escape."
+  },
+  {
+    "level": "COURSE",
+    "pre_obstacle_ball_z_m": 0.08446711957369585,
+    "crest_ball_z_m": 0.08461074781509374,
+    "post_obstacle_ball_z_m": 0.08446597386273444,
+    "crest_minus_pre_m": 0.00014362824139789454,
+    "ground_contact_gap_min_m": -0.005629327937400619,
+    "ground_contact_gap_max_m": -0.005382890374964117,
+    "normal_force_N_range": [
+      46.22194312059704,
+      46.78053649767125
+    ],
+    "normal_abs_z_min": 0.9996803526314576,
+    "queries": 93,
+    "terrain_solref": [
+      0.02,
+      1.0
+    ],
+    "scope": "Offline native contact queries at recorded states after1s; no integration. Negative distance is compliant penetration, not an escape."
+  }
+]

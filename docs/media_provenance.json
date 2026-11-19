@@ -1,0 +1,98 @@
+{
+  "videos": [
+    {
+      "video": "assets/videos/ppo_figure8.mp4",
+      "source": "experiments/experiment_1_figure8/PPO_TEST_1",
+      "frames": 601,
+      "fps": 20,
+      "actual_last_recorded_sim_s": 29.99999999999425,
+      "native_stop_s": 30.0,
+      "new_native_steps": 0,
+      "recorded_replay": true,
+      "human_session": false,
+      "wall_s": 2.2784231910000017
+    },
+    {
+      "video": "assets/videos/v4_figure8.mp4",
+      "source": "experiments/experiment_1_figure8/V4_TEST_1",
+      "frames": 601,
+      "fps": 20,
+      "actual_last_recorded_sim_s": 29.99999999999425,
+      "native_stop_s": 30.0,
+      "new_native_steps": 0,
+      "recorded_replay": true,
+      "human_session": false,
+      "wall_s": 2.2415701009999793
+    },
+    {
+      "video": "assets/videos/keyboard_baseline.mp4",
+      "source": "experiments/experiment_2_teleoperation/replay_2618001",
+      "frames": 241,
+      "fps": 20,
+      "actual_last_recorded_sim_s": 11.984000000000671,
+      "native_stop_s": 11.986,
+      "new_native_steps": 0,
+      "recorded_replay": true,
+      "human_session": false,
+      "wall_s": 0.6679965960001937
+    },
+    {
+      "video": "assets/videos/keyboard_modal.mp4",
+      "source": "experiments/experiment_2_teleoperation/modal_replay_2618001",
+      "frames": 321,
+      "fps": 20,
+      "actual_last_recorded_sim_s": 16.00000000000201,
+      "native_stop_s": 16.00000000000201,
+      "new_native_steps": 0,
+      "recorded_replay": true,
+      "human_session": false,
+      "wall_s": 0.9580912660003378
+    },
+    {
+      "video": "assets/videos/rough_terrain.mp4",
+      "source": "experiments/experiment_2_teleoperation/traverse_2618001",
+      "frames": 521,
+      "fps": 20,
+      "actual_last_recorded_sim_s": 25.99999999999647,
+      "native_stop_s": 25.99999999999647,
+      "new_native_steps": 0,
+      "recorded_replay": true,
+      "human_session": false,
+      "wall_s": 1.8458937049999804
+    }
+  ],
+  "gifs": [
+    {
+      "gif": "assets/gifs/experiment_1_figure8.gif",
+      "frames": 151,
+      "sampled_fps": 5,
+      "bytes": 1566317,
+      "source": "assets/videos/ppo_figure8.mp4"
+    },
+    {
+      "gif": "assets/gifs/experiment_2_keyboard.gif",
+      "frames": 61,
+      "sampled_fps": 5,
+      "bytes": 548842,
+      "source": "assets/videos/keyboard_baseline.mp4"
+    },
+    {
+      "gif": "assets/gifs/rough_terrain.gif",
+      "frames": 131,
+      "sampled_fps": 5,
+      "bytes": 1218843,
+      "source": "assets/videos/rough_terrain.mp4"
+    },
+    {
+      "gif": "assets/gifs/ppo_demo.gif",
+      "frames": 151,
+      "sampled_fps": 5,
+      "bytes": 1566317,
+      "source": "assets/videos/ppo_figure8.mp4"
+    }
+  ],
+  "figure8_case": "fixed TEST_1",
+  "keyboard_case": "fixed seed2618001; includes failure",
+  "trajectory_line_height_m": "visual projection at 0.01/0.015 only; never collision geometry",
+  "no_fake_fluid": true
+}

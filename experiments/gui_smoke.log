@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/duc/OpenBallBot-RL/public_releases/SloshBot-RL_20261116_v1/teleop_keyboard.py", line 2, in <module>
+    if __name__=='__main__':main()
+  File "/home/duc/OpenBallBot-RL/public_releases/SloshBot-RL_20261116_v1/sloshbot/teleop.py", line 61, in main
+    inputs.close();states.close();context.free();scene.free();env.close();glfw.destroy_window(window);glfw.terminate()
+AttributeError: 'mujoco._structs.MjvScene' object has no attribute 'free'

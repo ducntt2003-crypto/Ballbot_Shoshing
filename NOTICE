@@ -1,0 +1,8 @@
+SloshBot-RL public export, derived from the local OpenBallBot-RL research repository.
+Upstream repository recorded by git remote: https://github.com/salehiac/OpenBallBot-RL
+The original Apache License 2.0 text is retained without changing its terms.
+Unchanged inherited sources/assets are bundled under _vendor/ with provenance hashes.
+New application adapters, protocols, documentation and presentation are separate files.
+This notice does not assert new ownership of upstream models, third-party software or assets.
+Runtime dependencies (MuJoCo, SB3, PyTorch and others) are installed separately and retain their licenses.
+No public GitHub release, DOI, author list, hardware validation or CFD validation is asserted.

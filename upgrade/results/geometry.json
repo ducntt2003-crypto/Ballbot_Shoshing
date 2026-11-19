@@ -1,0 +1,62 @@
+{
+  "FLAT": {
+    "height_min_m": 0.0,
+    "height_max_m": 0.0,
+    "max_gradient": 0.0,
+    "max_slope_rad": 0.0,
+    "grid_spacing_m": 0.03125,
+    "normal_z_min": 1.0,
+    "geometry_pass": true,
+    "height_sha256": "f977197915306fe866956d05f11bd9dc5242422b58454245231bf0a7c2afd87e"
+  },
+  "MILD": {
+    "height_min_m": -0.002,
+    "height_max_m": 0.0014861826261848643,
+    "max_gradient": 0.02159089734215938,
+    "max_slope_rad": 0.02158754329338377,
+    "grid_spacing_m": 0.03125,
+    "normal_z_min": 0.9997669980361596,
+    "geometry_pass": true,
+    "height_sha256": "54015806e1eb9e3303d7d43f44ef6fc2d707322cbc2d1c6beab077b11802c187"
+  },
+  "RANDOM": {
+    "height_min_m": -0.001496829892724828,
+    "height_max_m": 0.0015,
+    "max_gradient": 0.019119858564501754,
+    "max_slope_rad": 0.01911752919960204,
+    "grid_spacing_m": 0.03125,
+    "normal_z_min": 0.9998172656042323,
+    "geometry_pass": true,
+    "height_sha256": "ac59befe2b8c5d0bde334341e3041782495300ff972eb86f5780acf18a0c7f7b"
+  },
+  "BUMPS": {
+    "height_min_m": 0.0,
+    "height_max_m": 0.0017908420138888887,
+    "max_gradient": 0.018332825265194544,
+    "max_slope_rad": 0.018330771837680507,
+    "grid_spacing_m": 0.03125,
+    "normal_z_min": 0.9998319961063463,
+    "geometry_pass": true,
+    "height_sha256": "24e9a85a04995ddc8a3f5ea1b40da6ae91c8a607b4760bc0760ed1bb10d569cc"
+  },
+  "SLOPES": {
+    "height_min_m": 0.0,
+    "height_max_m": 0.0018,
+    "max_gradient": 0.019408165800048442,
+    "max_slope_rad": 0.01940572948140676,
+    "grid_spacing_m": 0.03125,
+    "normal_z_min": 0.9998117147405003,
+    "geometry_pass": true,
+    "height_sha256": "f243b9060ce8f54d3397c91611b602508cf0843ba63c363a73387f4fa2c37102"
+  },
+  "COURSE": {
+    "height_min_m": 0.0,
+    "height_max_m": 0.0012,
+    "max_gradient": 0.025290343165397643,
+    "max_slope_rad": 0.02528495332020909,
+    "grid_spacing_m": 0.03125,
+    "normal_z_min": 0.999680352598326,
+    "geometry_pass": true,
+    "height_sha256": "1c5afe9dbb3705fe1585ab1533b6799fd40b59a9ce517fdafeb8ff09ec8b9c3b"
+  }
+}

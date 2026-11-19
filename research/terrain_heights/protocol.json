@@ -1,0 +1,55 @@
+{
+  "controllers": [
+    "V4",
+    "PPO"
+  ],
+  "conditions": [
+    "H05",
+    "H10",
+    "H20",
+    "MIXED"
+  ],
+  "height_m": {
+    "H05": 0.005,
+    "H10": 0.01,
+    "H20": 0.02,
+    "MIXED": [
+      0.005,
+      0.01,
+      0.02
+    ]
+  },
+  "seeds": [
+    2611801,
+    2611802,
+    2611803
+  ],
+  "terrain_extent_m": 4.0,
+  "grid": 129,
+  "reference": {
+    "A": 0.75,
+    "B": 0.375,
+    "T": 30
+  },
+  "duration_s": 30,
+  "native_dt_s": 0.002,
+  "pilot_s": 3,
+  "wall_per_run_s": 90,
+  "aggregate_worker_wall_s": 850,
+  "native_step_cap": 400000,
+  "gradient_screen_rad": 0.06,
+  "physical_guards": {
+    "tilt_rad": 0.12,
+    "ROM_m": 0.0084,
+    "torque_Nm": 10,
+    "tracking_error_m": 0.25
+  },
+  "progression": "Geometry screen, then3s V4 pilot, then3paired seeds per controller. To open next condition require at least2/3 physical30s completions for BOTH controllers at preceding height. All individual guard failures stop immediately; no tuning.",
+  "hard_feature_shape": "Positive compact C2 bumps; height scale changes, same footprint for H05/H10/H20. Bump radius0.60m bounds20mm maximum slope below0.06rad; initial disc radius0.12m remains flat.",
+  "surface_definition": "Continuous collision heightfield; nominal elevations above flat floor, not peak-to-peak noise. MIXED includes separate nominal5/10/20mm hills.",
+  "source_release": "public_releases/SloshBot-RL_20261116_v2",
+  "new_training_steps": 0,
+  "visualization_case": "first seed, fixed before trials",
+  "contact_caveat": "Inherited compliant penetration around5.4\u20135.6mm; not silently corrected.",
+  "PPO_provenance": "Frozen500k checkpoint, privileged liquid-state residual onV4"
+}

@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering\small
+\caption{Y matched training configuration. Two independent initializations, two conditions each; no new training in Z.}
+\label{tab:ppo}
+\begin{tabular}{ll}
+\hline
+Setting & Value \\
+\hline
+Training seeds & 2271001, 2271002 \\
+Transitions per run / total & 16384 / 65536 \\
+Actor and critic & 64 x 64 Tanh; observation31; action3 \\
+PPO & lr 0.0003; rollout512; batch64; epochs5 \\
+Discount / GAE / clip & .99 / .95 / .2 \\
+Entropy / value / gradient cap & 0 / .5 / .5 \\
+Target KL / initial log-std & .03 / -2.3 \\
+Residual delta bound & .25 normalized; nominal .075 Nm/motor \\
+Episode length / policy period & 5 s / .010 s \\
+\hline
+\end{tabular}
+\end{table*}

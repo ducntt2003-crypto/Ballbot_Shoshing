@@ -1,0 +1,7 @@
+{
+  "figure": "assets/plots/experiment_1/training_04_reward.png",
+  "source": "research/training_500k/training_recovery1/episodes.json",
+  "source_sha256": "29acd7c4dd6ad42c41941aa88b9dbc9fe0972489f3df8a26a085c8553656afc4",
+  "source_plotter": "ballbot_sloshing_research/end_to_end_parallel_rl/figures.py",
+  "description": "Inherited raw episode return scatter, four curriculum levels; step+8 executed-budget convention; no rerendered physics."
+}

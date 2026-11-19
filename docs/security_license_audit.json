@@ -1,0 +1,18 @@
+{
+  "private_key_files": [],
+  "credential_patterns": [],
+  "large_files_over_95MiB": [],
+  "tex_compilers": {
+    "pdflatex": null,
+    "xelatex": null,
+    "lualatex": null,
+    "tectonic": null
+  },
+  "passed": true,
+  "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "license": "existing Apache2.0 text retained",
+  "asset_ownership": "Upstream attribution retained; no new ownership claim",
+  "github_published": false,
+  "fresh_dependency_install": false,
+  "editable_install_no_deps_tested": true
+}

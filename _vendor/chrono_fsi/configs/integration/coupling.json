@@ -1,0 +1,12 @@
+{
+  "label": "EXPERIMENTAL",
+  "method": "explicit_fluid_then_rigid_same_interval",
+  "fluid_dt_s": 5e-05,
+  "rigid_dt_s": 5e-05,
+  "fluid_substeps": 1,
+  "controller_dt_s": 0.002,
+  "force_frame": "W",
+  "torque_reference": "T at interval start",
+  "max_SPH_horizon_s": 0.02,
+  "full_SPH_training": "BLOCKED"
+}

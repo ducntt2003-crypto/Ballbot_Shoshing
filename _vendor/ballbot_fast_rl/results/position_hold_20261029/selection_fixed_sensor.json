@@ -1,0 +1,301 @@
+{
+  "strategy": "A with nominal-exact fixed sensor migration",
+  "new_timesteps": 131072,
+  "prior_A_steps": 131072,
+  "prior_interrupted_B_steps_upper_bound": 32768,
+  "wall_s": 179.29083632799995,
+  "stages": [
+    {
+      "stage": "B",
+      "new_steps": 131072,
+      "wall_s": 120.58004471599997,
+      "validation": {
+        "episodes": 10,
+        "survived": 2,
+        "strict": 0,
+        "strict_rate": 0.0,
+        "roll_RMS_deg": {
+          "mean": 0.12340398098512115,
+          "max": 0.17577482859950297
+        },
+        "pitch_RMS_deg": {
+          "mean": 0.21431850011914683,
+          "max": 0.2622175973653025
+        },
+        "max_displacement_m": {
+          "mean": 0.7356072088598469,
+          "max": 0.7503257939757845
+        },
+        "final_position_error_m": {
+          "mean": 0.7356540278300276,
+          "max": 0.7503814691644044
+        },
+        "velocity_XY_RMS_m_s": {
+          "mean": 0.09351347535618715,
+          "max": 0.10408094662368596
+        },
+        "yaw_max_deg": {
+          "mean": 0.15305883977379342,
+          "max": 0.5080172693307261
+        },
+        "torque_RMS_Nm": {
+          "mean": 1.5950619762106115,
+          "max": 1.7818228886595997
+        },
+        "torque_peak_Nm": {
+          "mean": 4.661724030971527,
+          "max": 6.703049540519714
+        },
+        "saturation_fraction": {
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "slip_low_RMS_m_s": {
+          "mean": 0.06784439867923338,
+          "max": 0.07572129119764925
+        },
+        "slip_high_RMS_m_s": {
+          "mean": 0.000850514660426052,
+          "max": 0.0009896291513065015
+        },
+        "survival_s": {
+          "mean": 9.293199999999771,
+          "max": 10.000000000000009
+        }
+      },
+      "checkpoint": "pretrained/LEGACY_CHECKPOINT_NOT_INCLUDED.zip"
+    }
+  ],
+  "candidate_checkpoint": "pretrained/LEGACY_CHECKPOINT_NOT_INCLUDED.zip",
+  "deployment_recommendation": "candidate",
+  "selected_for_final_comparison": "pretrained/LEGACY_CHECKPOINT_NOT_INCLUDED.zip",
+  "original_checkpoint": "pretrained/LEGACY_CHECKPOINT_NOT_INCLUDED.zip",
+  "candidate_validation5": {
+    "episodes": 10,
+    "survived": 10,
+    "strict": 9,
+    "strict_rate": 0.9,
+    "roll_RMS_deg": {
+      "mean": 0.1537356092821815,
+      "max": 0.22156398453228707
+    },
+    "pitch_RMS_deg": {
+      "mean": 0.1306165435640813,
+      "max": 0.18328101548890763
+    },
+    "max_displacement_m": {
+      "mean": 0.23395895599600447,
+      "max": 0.31117493983516353
+    },
+    "final_position_error_m": {
+      "mean": 0.23395874681946624,
+      "max": 0.31118268519506515
+    },
+    "velocity_XY_RMS_m_s": {
+      "mean": 0.055313099115616285,
+      "max": 0.07047956465313641
+    },
+    "yaw_max_deg": {
+      "mean": 0.09560890467275282,
+      "max": 0.3516372539985102
+    },
+    "torque_RMS_Nm": {
+      "mean": 0.9627634484225718,
+      "max": 1.2467990480547249
+    },
+    "torque_peak_Nm": {
+      "mean": 4.233847543597221,
+      "max": 6.703049540519714
+    },
+    "saturation_fraction": {
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "slip_low_RMS_m_s": {
+      "mean": 0.0419344563402514,
+      "max": 0.052865051106009454
+    },
+    "slip_high_RMS_m_s": {
+      "mean": 0.00033308346341036837,
+      "max": 0.0004363802367807269
+    },
+    "survival_s": {
+      "mean": 4.999999999999671,
+      "max": 4.999999999999671
+    }
+  },
+  "candidate_validation10": {
+    "episodes": 10,
+    "survived": 2,
+    "strict": 0,
+    "strict_rate": 0.0,
+    "roll_RMS_deg": {
+      "mean": 0.12340398098512115,
+      "max": 0.17577482859950297
+    },
+    "pitch_RMS_deg": {
+      "mean": 0.21431850011914683,
+      "max": 0.2622175973653025
+    },
+    "max_displacement_m": {
+      "mean": 0.7356072088598469,
+      "max": 0.7503257939757845
+    },
+    "final_position_error_m": {
+      "mean": 0.7356540278300276,
+      "max": 0.7503814691644044
+    },
+    "velocity_XY_RMS_m_s": {
+      "mean": 0.09351347535618715,
+      "max": 0.10408094662368596
+    },
+    "yaw_max_deg": {
+      "mean": 0.15305883977379342,
+      "max": 0.5080172693307261
+    },
+    "torque_RMS_Nm": {
+      "mean": 1.5950619762106115,
+      "max": 1.7818228886595997
+    },
+    "torque_peak_Nm": {
+      "mean": 4.661724030971527,
+      "max": 6.703049540519714
+    },
+    "saturation_fraction": {
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "slip_low_RMS_m_s": {
+      "mean": 0.06784439867923338,
+      "max": 0.07572129119764925
+    },
+    "slip_high_RMS_m_s": {
+      "mean": 0.000850514660426052,
+      "max": 0.0009896291513065015
+    },
+    "survival_s": {
+      "mean": 9.293199999999771,
+      "max": 10.000000000000009
+    }
+  },
+  "original_validation5": {
+    "episodes": 10,
+    "survived": 10,
+    "strict": 8,
+    "strict_rate": 0.8,
+    "roll_RMS_deg": {
+      "mean": 0.148100144610041,
+      "max": 0.2164950855209256
+    },
+    "pitch_RMS_deg": {
+      "mean": 0.1341099940808485,
+      "max": 0.18761287318802133
+    },
+    "max_displacement_m": {
+      "mean": 0.24182770524585467,
+      "max": 0.3200786961090097
+    },
+    "final_position_error_m": {
+      "mean": 0.2418293598872169,
+      "max": 0.3200905450176141
+    },
+    "velocity_XY_RMS_m_s": {
+      "mean": 0.0570094394185927,
+      "max": 0.07222862618139335
+    },
+    "yaw_max_deg": {
+      "mean": 0.10709722070205685,
+      "max": 0.37025323834170665
+    },
+    "torque_RMS_Nm": {
+      "mean": 0.9904937503921072,
+      "max": 1.2755562191244667
+    },
+    "torque_peak_Nm": {
+      "mean": 4.239266782999039,
+      "max": 6.729897856712341
+    },
+    "saturation_fraction": {
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "slip_low_RMS_m_s": {
+      "mean": 0.04307869842330118,
+      "max": 0.05406718041287929
+    },
+    "slip_high_RMS_m_s": {
+      "mean": 0.0003497211205112865,
+      "max": 0.00045449091898294366
+    },
+    "survival_s": {
+      "mean": 4.999999999999671,
+      "max": 4.999999999999671
+    }
+  },
+  "original_validation10": {
+    "episodes": 10,
+    "survived": 2,
+    "strict": 0,
+    "strict_rate": 0.0,
+    "roll_RMS_deg": {
+      "mean": 0.11896847321461297,
+      "max": 0.17463705121373585
+    },
+    "pitch_RMS_deg": {
+      "mean": 0.2264445693284999,
+      "max": 0.2683847942223346
+    },
+    "max_displacement_m": {
+      "mean": 0.7455695092944535,
+      "max": 0.7503660399538946
+    },
+    "final_position_error_m": {
+      "mean": 0.7456162337038978,
+      "max": 0.7504074875320322
+    },
+    "velocity_XY_RMS_m_s": {
+      "mean": 0.09729830083874808,
+      "max": 0.1074410230365405
+    },
+    "yaw_max_deg": {
+      "mean": 0.16735951885647218,
+      "max": 0.5375621314823804
+    },
+    "torque_RMS_Nm": {
+      "mean": 1.655957623633618,
+      "max": 1.8369353175869296
+    },
+    "torque_peak_Nm": {
+      "mean": 4.83335480093956,
+      "max": 6.729897856712341
+    },
+    "saturation_fraction": {
+      "mean": 0.0,
+      "max": 0.0
+    },
+    "slip_low_RMS_m_s": {
+      "mean": 0.07056684578612797,
+      "max": 0.0780754125951947
+    },
+    "slip_high_RMS_m_s": {
+      "mean": 0.0009560574315467024,
+      "max": 0.0011085920696973063
+    },
+    "survival_s": {
+      "mean": 9.090599999999705,
+      "max": 10.000000000000009
+    }
+  },
+  "final_tests_seen": false,
+  "training_budget_wall_s": 1800,
+  "reward_version": "position_hold_integral_v1",
+  "reward_weights": {
+    "alive": 1.0,
+    "tilt": 2.0,
+    "angular_velocity": 0.1,
+    "position": 1.5,
+    "velocity": 1.0,
+    "torque": 0.02,
+    "action_rate": 0.01
+  }
+}

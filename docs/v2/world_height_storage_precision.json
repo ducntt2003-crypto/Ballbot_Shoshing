@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "reason": "Saved world-height display arrays use float32 arithmetic; two epsilon*height-range operations bound the comparison with double-precision native reconstruction. No trajectory, geometry, physical or safety acceptance data changed.",
+  "runs": [
+    {
+      "run": "BUMPS_2618001",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 1.3411045060932048e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "BUMPS_2618002",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 1.3411045060932048e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "BUMPS_2618003",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 1.3411045060932048e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "COURSE_2618001",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 1.061707735616757e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "COURSE_2618002",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 1.061707735616757e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "COURSE_2618003",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 1.061707735616757e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "FLAT_2618001",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 0.0,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "FLAT_2618002",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 0.0,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "FLAT_2618003",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 0.0,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "MILD_2618001",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 1.8440186964202576e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "MILD_2618002",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 1.8440186964202576e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "MILD_2618003",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 1.8440186964202576e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "RANDOM_2618001",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 2.3118414084130623e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "RANDOM_2618002",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 2.3118414084130623e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "RANDOM_2618003",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 2.3118414084130623e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "SLOPES_2618001",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 1.3317912809888977e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "SLOPES_2618002",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 1.3317912809888977e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    },
+    {
+      "run": "SLOPES_2618003",
+      "saved_dtype": "float32",
+      "max_abs_storage_reconstruction_difference_m": 1.3317912809888977e-10,
+      "roundoff_bound_m": 9.5367431640625e-10
+    }
+  ]
+}

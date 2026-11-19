@@ -1,0 +1,109 @@
+<mujoco model="ballbot">
+  <compiler meshdir="__ASSET_ROOT__/stl_files" texturedir="__ASSET_ROOT__/textures" />
+  <option timestep="0.002" />
+  <option cone="elliptic" />
+  <option integrator="RK4" />
+  <visual>
+    <map znear="0.0001" zfar="1.0" />
+  </visual>
+  <asset>
+    <mesh name="cone_mesh" file="cone.stl" scale="0.01 0.01 0.01" />
+    <texture name="grid" type="2d" builtin="checker" rgb1=".1 .2 .3" rgb2=".2 .3 .4" width="300" height="300" />
+    <material name="grid" texture="grid" texrepeat="8 8" reflectance=".8" shininess="0.8" />
+    <texture name="basketball_tex" type="2d" file="basketball_texture.png" />
+    <material name="basketball_mat" texture="basketball_tex" shininess="0.2" />
+    <hfield name="terrain" nrow="293" ncol="293" size="5 5 0.1 0.1" />
+  <hfield name="track8_collision" nrow="129" ncol="129" size="2.0 2.0 0.004 .05" /></asset>
+  <worldbody>
+    <light name="top" pos="0 0 10.0" />
+    <geom name="terrain" type="hfield" friction="1.0 .005 .0001" rgba=".15 .18 .2 1" hfield="track8_collision" pos="0 0 -0.001496829892724828" />
+    <body name="base" pos="0.0 0.0 0.21009999999999998" euler="0 0 0">
+      <freejoint name="base_free_joint" />
+      <geom name="tower_collision" type="cylinder" size="0.11 0.14" pos="0 0 0.2" density="23.6" rgba="0.18 0.8 0.44 1.0" />
+      <geom name="ballast" type="box" size="0.1 0.1  0.1" rgba="0.5 0.5 0.0 0.5" density="400.0" pos="0.0 0.0 0.002" contype="0" conaffinity="0" group="3" />   to lower center of mass
+
+      <body name="cam_0_body" pos="0.17 -0.01 -0.06" euler="180 -30 0">
+        <geom name="cam_0_geom" type="mesh" mesh="cone_mesh" rgba="1.0 1.0 0.0 1.0" density="1.0" pos="0 0 0" />
+        <geom name="cam_0_stick" type="capsule" fromto="0 0 0.0    -0.2 0 0" size="0.01 0.005" rgba="0.18 0.8 0.44 1" density="1000.0" />--&gt;
+        <camera name="cam_0" pos="0 0 0" euler="180 0 0" fovy="90" />
+      </body>
+      <body name="cam_1_body" pos="-0.17 -0.01 -0.06" euler="180 30 0">
+        <geom name="cam_1_geom" type="mesh" mesh="cone_mesh" rgba="1.0 1.0 0.0 1.0" density="1.0" pos="0 0 0" />
+        <geom name="cam_1_stick" type="capsule" fromto="0 0 0.0    0.2 0 0" size="0.01 0.005" rgba="0.18 0.8 0.44 1" density="1000.0" />--&gt;
+        <camera name="cam_1" pos="0 0 0" euler="180 0 0" fovy="90" />
+      </body>
+      <body name="wheel_0" pos="0 0 -0.001" euler="0 0 0">
+        <geom name="wheel_mesh_0" type="capsule" size="0.025 0.02" euler="-45 9 0" pos="-0.018 -0.08 -0.053" density="620.0" rgba="1 0 0 1" material="grid" />
+        <joint name="wheel_joint_0" type="hinge" axis="-0.15316554764123935 -0.6903189805903613 -0.7071067953657663" pos="0 0 0.0293" armature="0.005" damping="0.8" />
+      </body>
+      <body name="wheel_1" pos="0 0 -0.001" euler="0 0 120">
+        <geom name="wheel_mesh_1" type="capsule" size="0.025 0.02" euler="-45 9 0" pos="-0.018 -0.08 -0.053" density="620.0" rgba="0 1 0 1" material="grid" />
+        <joint name="wheel_joint_1" type="hinge" axis="-0.15316554764123935 -0.6903189805903613 -0.7071067953657663" pos="0 0 0.0293" armature="0.005" damping="0.8" />
+      </body>
+      <body name="wheel_2" pos="0 0 -0.001" euler="0 0 240">
+        <geom name="wheel_mesh_2" type="capsule" size="0.025 0.02" euler="-45 9 0" pos="-0.018 -0.08 -0.053" density="620.0" rgba="0 0 1 1" material="grid" />
+        <joint name="wheel_joint_2" type="hinge" axis="-0.15316554764123935 -0.6903189805903613 -0.7071067953657663" pos="0 0 0.0293" armature="0.005" damping="0.8" />
+      </body>
+      <site name="imu_site" pos="0 0 0" size="0.01" />
+      <body name="water_tank" pos="0.0 0.0 0.365" euler="0 0 0">
+        <inertial mass="0.21741454791021259" pos="-7.417669799850175e-20 6.23349600398668e-20 0.062417532208562373" fullinertia="0.0011077168616001865 0.0011077168616001865 0.0009826206378629534 -5.375697753605543e-22 -1.2144414612134182e-21 8.470329472543003e-22" />
+        <geom name="tank_bottom" type="cylinder" size="0.07200000000000001 0.001" pos="0 0 -0.001" rgba=".25 .65 .85 .7" />
+        <geom name="tank_side_0" type="box" size="0.001 0.009347327328705106 0.08" pos="0.07100000000000001 0.0 0.08" euler="0 0 0.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_1" type="box" size="0.001 0.009347327328705106 0.08" pos="0.06858073366652385 0.018376152202278975 0.08" euler="0 0 14.999999999999998" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_2" type="box" size="0.001 0.009347327328705106 0.08" pos="0.061487803668695155 0.0355 0.08" euler="0 0 29.999999999999996" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_3" type="box" size="0.001 0.009347327328705106 0.08" pos="0.050204581464244884 0.05020458146424488 0.08" euler="0 0 45.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_4" type="box" size="0.001 0.009347327328705106 0.08" pos="0.03550000000000001 0.06148780366869515 0.08" euler="0 0 59.99999999999999" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_5" type="box" size="0.001 0.009347327328705106 0.08" pos="0.018376152202278975 0.06858073366652385 0.08" euler="0 0 75.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_6" type="box" size="0.001 0.009347327328705106 0.08" pos="4.347496136973104e-18 0.07100000000000001 0.08" euler="0 0 90.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_7" type="box" size="0.001 0.009347327328705106 0.08" pos="-0.018376152202278968 0.06858073366652385 0.08" euler="0 0 105.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_8" type="box" size="0.001 0.009347327328705106 0.08" pos="-0.03549999999999999 0.061487803668695155 0.08" euler="0 0 119.99999999999999" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_9" type="box" size="0.001 0.009347327328705106 0.08" pos="-0.05020458146424488 0.050204581464244884 0.08" euler="0 0 135.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_10" type="box" size="0.001 0.009347327328705106 0.08" pos="-0.061487803668695155 0.0355 0.08" euler="0 0 150.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_11" type="box" size="0.001 0.009347327328705106 0.08" pos="-0.06858073366652385 0.018376152202278995 0.08" euler="0 0 165.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_12" type="box" size="0.001 0.009347327328705106 0.08" pos="-0.07100000000000001 8.694992273946209e-18 0.08" euler="0 0 180.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_13" type="box" size="0.001 0.009347327328705106 0.08" pos="-0.06858073366652385 -0.018376152202278978 0.08" euler="0 0 195.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_14" type="box" size="0.001 0.009347327328705106 0.08" pos="-0.06148780366869516 -0.03549999999999998 0.08" euler="0 0 210.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_15" type="box" size="0.001 0.009347327328705106 0.08" pos="-0.050204581464244905 -0.05020458146424485 0.08" euler="0 0 224.99999999999997" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_16" type="box" size="0.001 0.009347327328705106 0.08" pos="-0.03550000000000004 -0.061487803668695135 0.08" euler="0 0 239.99999999999997" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_17" type="box" size="0.001 0.009347327328705106 0.08" pos="-0.018376152202278968 -0.06858073366652385 0.08" euler="0 0 255.00000000000003" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_18" type="box" size="0.001 0.009347327328705106 0.08" pos="-1.3042488410919312e-17 -0.07100000000000001 0.08" euler="0 0 270.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_19" type="box" size="0.001 0.009347327328705106 0.08" pos="0.018376152202278943 -0.06858073366652387 0.08" euler="0 0 285.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_20" type="box" size="0.001 0.009347327328705106 0.08" pos="0.03550000000000001 -0.06148780366869515 0.08" euler="0 0 300.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_21" type="box" size="0.001 0.009347327328705106 0.08" pos="0.05020458146424487 -0.05020458146424489 0.08" euler="0 0 315.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_22" type="box" size="0.001 0.009347327328705106 0.08" pos="0.061487803668695135 -0.03550000000000004 0.08" euler="0 0 330.0" rgba=".25 .65 .85 .25" />
+        <geom name="tank_side_23" type="box" size="0.001 0.009347327328705106 0.08" pos="0.06858073366652384 -0.018376152202279034 0.08" euler="0 0 344.99999999999994" rgba=".25 .65 .85 .25" />
+        <geom name="tank_support_0" type="cylinder" size=".003 .0115" pos="0.05 0.0 -.0135" rgba=".5 .5 .5 1" />
+        <geom name="tank_support_1" type="cylinder" size=".003 .0115" pos="3.061616997868383e-18 0.05 -.0135" rgba=".5 .5 .5 1" />
+        <geom name="tank_support_2" type="cylinder" size=".003 .0115" pos="-0.05 6.123233995736766e-18 -.0135" rgba=".5 .5 .5 1" />
+        <geom name="tank_support_3" type="cylinder" size=".003 .0115" pos="-9.184850993605149e-18 -0.05 -.0135" rgba=".5 .5 .5 1" />
+        <body name="fluid_fixed" pos="0 0 0.016240300315499525">
+          <inertial mass="0.16011503368631874" pos="0 0 0" diaginertia="0.0006551349766048231 0.0006551349766048231 0.0012225400000000003" />
+        </body>
+        <body name="fluid_modal" pos="0 0 0.016240300315499525">
+          <inertial mass="0.33888496631368126" pos="0 0 0" diaginertia="1e-08 1e-08 1e-08" />
+          <joint name="slosh_x" type="slide" axis="1 0 0" stiffness="60.62552916836369" damping="0.18130672534672299" limited="false" />
+          <joint name="slosh_y" type="slide" axis="0 1 0" stiffness="60.62552916836369" damping="0.18130672534672299" limited="false" />
+          <geom name="equivalent_modal_mass" type="sphere" size=".008" mass="0" rgba=".1 .5 1 .9" contype="0" conaffinity="0" group="2" />
+        </body>
+      </body>
+    </body>
+    <body name="ball" pos="0.0 0.0 0.2301">
+      <freejoint name="ball_free_joint" />
+      <geom name="the_ball" type="sphere" size="0.09" pos="0 0 -0.14" rgba="1 1 1 1.0" density="55" material="basketball_mat" />
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="motor_0" joint="wheel_joint_0" gear="1" ctrlrange="-10.0 10.0" />
+    <motor name="motor_1" joint="wheel_joint_1" gear="1" ctrlrange="-10.0 10.0" />
+    <motor name="motor_2" joint="wheel_joint_2" gear="1" ctrlrange="-10.0 10.0" />
+  </actuator>
+  <contact>
+    <pair name="non-isotropic0" geom1="the_ball" geom2="wheel_mesh_0" condim="3" friction="0.001 1.0" />
+    <pair name="non-isotropic1" geom1="the_ball" geom2="wheel_mesh_1" condim="3" friction="0.001 1.0" />
+    <pair name="non-isotropic2" geom1="the_ball" geom2="wheel_mesh_2" condim="3" friction="0.001 1.0" />
+  </contact>
+  <sensor>
+    <accelerometer name="imu_accel" site="imu_site" />
+    <gyro name="imu_gyro" site="imu_site" />
+  </sensor>
+</mujoco>

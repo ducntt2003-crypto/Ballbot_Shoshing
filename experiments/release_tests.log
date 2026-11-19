@@ -1,0 +1,42 @@
+test_checkpoint (test_release.ReleaseTests) ... ok
+test_command_bounds (test_release.ReleaseTests) ... ok
+test_cross_controller_physics (test_release.ReleaseTests) ... ok
+test_key_release_and_focus (test_release.ReleaseTests) ... ok
+test_native_replay_and_initial_match (test_release.ReleaseTests) ... FAIL
+test_opposite_keys (test_release.ReleaseTests) ... ok
+test_pause_reset_exit (test_release.ReleaseTests) ... ok
+test_playground_geometry (test_release.ReleaseTests) ... ok
+test_recovery_censoring (test_release.ReleaseTests) ... ok
+test_release_neutral (test_release.ReleaseTests) ... ok
+test_space (test_release.ReleaseTests) ... ok
+test_turn_heading (test_release.ReleaseTests) ... ok
+
+======================================================================
+FAIL: test_native_replay_and_initial_match (test_release.ReleaseTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/duc/OpenBallBot-RL/public_releases/SloshBot-RL_20261116_v1/tests/test_release.py", line 44, in test_native_replay_and_initial_match
+    np.testing.assert_array_equal(e.e.data.qpos,cached['initial']['qpos']);np.testing.assert_array_equal(e.e.data.qvel,cached['initial']['qvel'])
+  File "/home/duc/OpenBallBot-RL/.venv/lib/python3.10/site-packages/numpy/_utils/__init__.py", line 86, in wrapper
+    return fun(*args, **kwargs)
+  File "/home/duc/OpenBallBot-RL/.venv/lib/python3.10/site-packages/numpy/testing/_private/utils.py", line 1057, in assert_array_equal
+    assert_array_compare(operator.__eq__, actual, desired, err_msg=err_msg,
+  File "/home/duc/OpenBallBot-RL/.venv/lib/python3.10/site-packages/numpy/testing/_private/utils.py", line 921, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not equal
+
+Mismatched elements: 2 / 19 (10.5%)
+Max absolute difference among violations: 1.31613635e-05
+Max relative difference among violations: 6.26461456e-05
+ ACTUAL: array([-3.632444e-03,  4.183712e-03,  2.101037e-01,  9.999995e-01,
+       -1.701076e-04, -9.539883e-04,  0.000000e+00,  0.000000e+00,
+        0.000000e+00,  0.000000e+00,  0.000000e+00,  0.000000e+00,...
+ DESIRED: array([-3.632444e-03,  4.183712e-03,  2.100906e-01,  9.999995e-01,
+       -1.701076e-04, -9.539883e-04,  0.000000e+00,  0.000000e+00,
+        0.000000e+00,  0.000000e+00,  0.000000e+00,  0.000000e+00,...
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.162s
+
+FAILED (failures=1)

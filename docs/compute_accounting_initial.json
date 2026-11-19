@@ -1,0 +1,10 @@
+{
+  "new_evaluation_native_steps": 163972,
+  "GUI_smoke_native_steps": 2000,
+  "initial_corrected_release_tests_native_steps": 10,
+  "first_essential_tests_missing_fixture_native_steps": 10,
+  "final_essential_tests_native_steps": 37,
+  "new_training_transitions": 0,
+  "reused_V4_PPO_full_horizon_native_steps_not_new": 90000,
+  "new_native_steps_total": 166029
+}

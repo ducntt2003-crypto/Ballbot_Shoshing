@@ -1,0 +1,94 @@
+{
+  "selected": {
+    "step": 500000,
+    "path": "/home/duc/OpenBallBot-RL/ballbot_sloshing_research/results/end_to_end_parallel_rl_20261116_v1/training_recovery1/checkpoint_500000.zip",
+    "sha256": "651989a98dd3ab04294adddd4a0bc0fb63e09b96749e9a980c5041e51bbd5db7",
+    "qualified": true,
+    "fulltask_passes": 0,
+    "windows": 30,
+    "RMSE_mean": 0.06891284977971637,
+    "energy_mean": 0.00010577581980661191,
+    "cases": 2,
+    "max_valid_duration": 30.0
+  },
+  "scores": [
+    {
+      "step": 0,
+      "path": "/home/duc/OpenBallBot-RL/ballbot_sloshing_research/results/end_to_end_parallel_rl_20261116_v1/training/checkpoint_0.zip",
+      "sha256": "5352908c98218763541cc3e2fab6f5ff5482f9e9f7bf7af903b5d1cec91d888f",
+      "qualified": true,
+      "fulltask_passes": 0,
+      "windows": 30,
+      "RMSE_mean": 0.06895760824916758,
+      "energy_mean": 0.00010551168145011305,
+      "cases": 2,
+      "max_valid_duration": 30.0
+    },
+    {
+      "step": 100000,
+      "path": "/home/duc/OpenBallBot-RL/ballbot_sloshing_research/results/end_to_end_parallel_rl_20261116_v1/training_recovery1/checkpoint_100000.zip",
+      "sha256": "038cf0723b4f9bd89e0d6e40dda3c6f12959cbb1d5208ed6ca5c8e756dfe0662",
+      "qualified": true,
+      "fulltask_passes": 0,
+      "windows": 30,
+      "RMSE_mean": 0.06892069253279501,
+      "energy_mean": 0.00010515887093814638,
+      "cases": 2,
+      "max_valid_duration": 30.0
+    },
+    {
+      "step": 50000,
+      "path": "/home/duc/OpenBallBot-RL/ballbot_sloshing_research/results/end_to_end_parallel_rl_20261116_v1/training_recovery1/checkpoint_50000.zip",
+      "sha256": "91191aa9acf5933024a7d8c4ad8a9694aee622e6e2ee8081e42f5ac0da042bf6",
+      "qualified": true,
+      "fulltask_passes": 0,
+      "windows": 30,
+      "RMSE_mean": 0.06893800189674565,
+      "energy_mean": 0.0001049863406680368,
+      "cases": 2,
+      "max_valid_duration": 30.0
+    },
+    {
+      "step": 500000,
+      "path": "/home/duc/OpenBallBot-RL/ballbot_sloshing_research/results/end_to_end_parallel_rl_20261116_v1/training_recovery1/checkpoint_500000.zip",
+      "sha256": "651989a98dd3ab04294adddd4a0bc0fb63e09b96749e9a980c5041e51bbd5db7",
+      "qualified": true,
+      "fulltask_passes": 0,
+      "windows": 30,
+      "RMSE_mean": 0.06891284977971637,
+      "energy_mean": 0.00010577581980661191,
+      "cases": 2,
+      "max_valid_duration": 30.0
+    },
+    {
+      "step": 10000,
+      "path": "/home/duc/OpenBallBot-RL/ballbot_sloshing_research/results/end_to_end_parallel_rl_20261116_v1/training_recovery1/checkpoint_10000.zip",
+      "sha256": "53b7dd2a1af3d9f95793d090585140c5dbdf8e150376fc057f2df5d37cb8e6c4",
+      "qualified": true,
+      "fulltask_passes": 0,
+      "windows": 30,
+      "RMSE_mean": 0.0689573095615034,
+      "energy_mean": 0.00010551056691057203,
+      "cases": 2,
+      "max_valid_duration": 30.0
+    },
+    {
+      "step": 250000,
+      "path": "/home/duc/OpenBallBot-RL/ballbot_sloshing_research/results/end_to_end_parallel_rl_20261116_v1/training_recovery1/checkpoint_250000.zip",
+      "sha256": "c7e823b52bb5c474e64bdaf5b8368f637e4ff14acfae9320fb230fb49557d22f",
+      "qualified": true,
+      "fulltask_passes": 0,
+      "windows": 30,
+      "RMSE_mean": 0.06892640573878607,
+      "energy_mean": 0.0001053462823542365,
+      "cases": 2,
+      "max_valid_duration": 30.0
+    }
+  ],
+  "qualified": true,
+  "selected_before_heldout": true,
+  "heldout_used_for_selection": false,
+  "actual_last": "/home/duc/OpenBallBot-RL/ballbot_sloshing_research/results/end_to_end_parallel_rl_20261116_v1/training_recovery1/actual_last.zip",
+  "actual_last_sha256": "80323a4840f34a4aaaf69e3c0b2d3142f94ecf0a08d2ce49099bfede2c90d651",
+  "one_training_seed": true
+}

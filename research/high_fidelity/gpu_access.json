@@ -1,0 +1,12 @@
+{
+  "observed_in_current_session": true,
+  "activation_script": "chrono_fsi/scripts/activate_chrono_env.sh",
+  "cuInit": 0,
+  "cuDeviceGetCount": 0,
+  "device_count": 1,
+  "name": "NVIDIA GeForce RTX4090 Laptop GPU",
+  "driver": "580.178.04",
+  "memory_MiB": 16376,
+  "new_native_GPU_steps": 1600,
+  "no_system_changes": true
+}

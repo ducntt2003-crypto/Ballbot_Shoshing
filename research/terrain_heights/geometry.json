@@ -1,0 +1,34 @@
+{
+  "H05": {
+    "max_height_m": 0.004986990466202892,
+    "min_height_m": 0.0,
+    "max_slope_rad": 0.014844487320181983,
+    "max_slope_deg": 0.8505264724818932,
+    "geometry_pass": true,
+    "initial_origin_height_m": 0.0
+  },
+  "H10": {
+    "max_height_m": 0.009973980932405783,
+    "min_height_m": 0.0,
+    "max_slope_rad": 0.02968243529519798,
+    "max_slope_deg": 1.7006782680849961,
+    "geometry_pass": true,
+    "initial_origin_height_m": 0.0
+  },
+  "H20": {
+    "max_height_m": 0.019947961864811566,
+    "min_height_m": 0.0,
+    "max_slope_rad": 0.05931265932281334,
+    "max_slope_deg": 3.39836505089448,
+    "geometry_pass": true,
+    "initial_origin_height_m": 0.0
+  },
+  "MIXED": {
+    "max_height_m": 0.019947961864811566,
+    "min_height_m": 0.0,
+    "max_slope_rad": 0.05931265932281334,
+    "max_slope_deg": 3.39836505089448,
+    "geometry_pass": true,
+    "initial_origin_height_m": 0.0
+  }
+}

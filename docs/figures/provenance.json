@@ -1,0 +1,9 @@
+{
+  "source": "research/training_500k/training_recovery1/episodes.json",
+  "source_sha256": "29acd7c4dd6ad42c41941aa88b9dbc9fe0972489f3df8a26a085c8553656afc4",
+  "episodes": 400,
+  "axis_step_offset": 8,
+  "offset_reason": "Executed budget and learner counter differ by eight; inherited campaign convention.",
+  "new_physics_steps": 0,
+  "new_training_steps": 0
+}

@@ -1,0 +1,18 @@
+{
+  "registered_before_trials": true,
+  "single_control_change": "Add unchanged frozen CentroidModalFeedback V4 residual to the unchanged Teleop_FF_Heading adapter. Backbone transfer (V3 FF+P6) is experimental and explicitly labeled. No gains/EOS/damping/physics change.",
+  "evidence": "Baseline replay seed2618001 ROM guard at native11.986s with small tilt; other seeds near ROM bound. Not proof of a unique root cause.",
+  "hypothesis": "Existing modal feedback can reduce growth of coupled liquid modes under bounded commands.",
+  "limits": "One deterministic correction opportunity, no retuning; short pilot then same3standardseeds; extended traversal only if physical-complete in all3. Shared native/wall caps unchanged.",
+  "source_before": {
+    "configs/protocol.json": "d7aa304c91f88dbf4400ce2b6db67fae34bdf365ed23495b1271d5c08bcafea9",
+    "configs/keyboard_script.json": "27a4fed49d7be72f791aafd96d38bd7bfd0dd7eab5e225d765b31a1e8a55698a",
+    "sloshbot/runtime.py": "7556597f02bf4b643bf707ae98364d20575599a21b3f90ef8acbc5b23a7e85c6",
+    "sloshbot/experiment.py": "846af4ba6543d80ef0762b4e0e34591af11142d9b703bf7f98eadbacec176112"
+  },
+  "source_after": {
+    "sloshbot/runtime.py": "a404f3a052c32ff41afe8e1edc6a54bc91ed1e889fe263a09fae6ed6a6f77079",
+    "sloshbot/experiment.py": "11dad464fc4941c802b738e523b1fd98eef749b42e156fcfbac75e359f0f0b4f"
+  },
+  "diagnostic_change": "New terminal.npz stores final native state even if observer guard prevents collection; old result traces remain unchanged."
+}

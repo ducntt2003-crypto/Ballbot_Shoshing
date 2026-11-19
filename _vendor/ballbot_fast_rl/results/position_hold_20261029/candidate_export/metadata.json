@@ -1,0 +1,59 @@
+{
+  "observation_contract": "fast_balance_fixed_sensor_v2",
+  "action_contract": "wheel_torque_v1",
+  "reward_version": "position_hold_integral_v1",
+  "reward_weights": {
+    "alive": 1.0,
+    "tilt": 2.0,
+    "angular_velocity": 0.1,
+    "position": 1.5,
+    "velocity": 1.0,
+    "torque": 0.02,
+    "action_rate": 0.01
+  },
+  "checkpoint": "pretrained/LEGACY_CHECKPOINT_NOT_INCLUDED.zip",
+  "checkpoint_SHA256": "a172512af6ecce355a746e9c0f60e6289c12655a8ffcec8fc4976060ff11dff6",
+  "dimensions": [
+    18,
+    3
+  ],
+  "physics_dt": 0.002,
+  "control_dt": 0.002,
+  "sensor_pose": {
+    "position_B": [
+      0.0,
+      0.0,
+      0.01641124112897404
+    ],
+    "R_BS": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "normalization": "static scaling embedded in actor.pt; RAW 18 inputs; no VecNormalize",
+  "raw_order": [
+    "gravity_B[3]",
+    "angular_velocity_S_rad_s[3]",
+    "wheel_qvel_rad_s[3]",
+    "position_error_B_m[2]",
+    "sensor_velocity_S_m_s[2]",
+    "previous_normalized_action[3]",
+    "zero_reference_velocity[2]"
+  ],
+  "migration": "fixed nominal sensor pose, independent of compiled/randomized inertial axes; nominal equivalent to old contract",
+  "position_estimation": "simulator proxy; requires external localization/odometry with drift correction on hardware",
+  "hardware_ready": false
+}

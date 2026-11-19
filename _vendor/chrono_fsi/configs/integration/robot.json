@@ -1,0 +1,6 @@
+{
+  "original_xml": "ballbotgym/ballbotgym/assets/bbot.xml",
+  "corrected_contract": "corrected_v2",
+  "legacy_contract": "legacy_v1",
+  "controller_period_s": 0.002
+}

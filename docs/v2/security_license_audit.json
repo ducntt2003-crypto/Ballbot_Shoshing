@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "issues": [],
+  "upstream_license_unchanged": true,
+  "Chrono_BSD_license_included": true,
+  "private_history_map_excluded": true,
+  "TeX_tools": {
+    "pdflatex": null,
+    "xelatex": null,
+    "lualatex": null,
+    "tectonic": null
+  },
+  "publication": false
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "regression_tests": 41,
+  "regression_native_steps": 37,
+  "v4_smoke_native_steps": 10,
+  "ppo_smoke_native_steps": 10,
+  "gui_smoke_native_steps": 460,
+  "total_new_native_steps": 517,
+  "new_training_steps": 0,
+  "full_experiments_rerun": 0,
+  "notes": "Short launch/regression checks only. Existing experiments are preserved, not rerun. Fresh OS install not tested; desktop smoke is not a human driving or real-time benchmark."
+}

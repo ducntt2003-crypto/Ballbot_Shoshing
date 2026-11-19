@@ -1,0 +1,9 @@
+{
+  "pid_gains": [
+    20,
+    15,
+    2
+  ],
+  "action_scale_Nm": -10,
+  "legacy_ppo": "trained_agents/example_model.zip"
+}

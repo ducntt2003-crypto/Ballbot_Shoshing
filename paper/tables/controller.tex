@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering\small
+\caption{Source-audited controller contracts; architecture differences preclude attribution solely to learning.}
+\label{tab:controller}
+\begin{tabular}{llll}
+\hline
+Controller & Backbone & Information & Evidence scope \\
+\hline
+PID & balance PID & attitude & historical balance baseline \\
+V2 & cascade & robot/reference & K censored/full attempts \\
+V3 & V2; reduced derivative gain & robot/reference & K attempted trials \\
+V2 FFv1 & V2 + velocity/acceleration & robot/reference & K attempted trials \\
+V4 & V2 FFv1 + modal feedback & privileged full state & J/L/M 30 s \\
+Teacher U & V4 + finite search & privileged forecasts & 1/3/5 s only \\
+PPO / Mixture Y & V4 + learned residual & 31 privileged features & 1/3 s DEV only \\
+\hline
+\end{tabular}
+\end{table*}

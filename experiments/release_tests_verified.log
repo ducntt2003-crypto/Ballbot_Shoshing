@@ -1,0 +1,17 @@
+test_checkpoint (test_release.ReleaseTests) ... ok
+test_command_bounds (test_release.ReleaseTests) ... ok
+test_cross_controller_physics (test_release.ReleaseTests) ... ok
+test_key_release_and_focus (test_release.ReleaseTests) ... ok
+test_native_replay_and_initial_match (test_release.ReleaseTests) ... ok
+test_opposite_keys (test_release.ReleaseTests) ... ok
+test_pause_reset_exit (test_release.ReleaseTests) ... ok
+test_playground_geometry (test_release.ReleaseTests) ... ok
+test_recovery_censoring (test_release.ReleaseTests) ... ok
+test_release_neutral (test_release.ReleaseTests) ... ok
+test_space (test_release.ReleaseTests) ... ok
+test_turn_heading (test_release.ReleaseTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.177s
+
+OK

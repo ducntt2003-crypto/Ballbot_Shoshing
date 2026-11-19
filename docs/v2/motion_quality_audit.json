@@ -1,0 +1,205 @@
+{
+  "scope": "Secondary descriptive application of unchanged V1 velocity/yaw thresholds; does not rewrite the preregistered geometric route gate. Saturation has no new posthoc acceptance gate.",
+  "summary": {
+    "FLAT": {
+      "route_pass": 3,
+      "legacy_motion_quality_pass": 3,
+      "attempted": 3,
+      "max_saturation_fraction": 0.35346153846153844
+    },
+    "MILD": {
+      "route_pass": 3,
+      "legacy_motion_quality_pass": 3,
+      "attempted": 3,
+      "max_saturation_fraction": 0.334
+    },
+    "RANDOM": {
+      "route_pass": 3,
+      "legacy_motion_quality_pass": 3,
+      "attempted": 3,
+      "max_saturation_fraction": 0.3616923076923077
+    },
+    "BUMPS": {
+      "route_pass": 3,
+      "legacy_motion_quality_pass": 2,
+      "attempted": 3,
+      "max_saturation_fraction": 0.39376923076923076
+    },
+    "SLOPES": {
+      "route_pass": 3,
+      "legacy_motion_quality_pass": 3,
+      "attempted": 3,
+      "max_saturation_fraction": 0.3733076923076923
+    },
+    "COURSE": {
+      "route_pass": 2,
+      "legacy_motion_quality_pass": 1,
+      "attempted": 3,
+      "max_saturation_fraction": 0.3087692307692308
+    }
+  },
+  "trials": [
+    {
+      "level": "MILD",
+      "seed": 2618003,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.0374443398325506,
+      "yawrate_RMSE_rad_s": 0.04503668011936587,
+      "saturation_fraction": 0.31561538461538463
+    },
+    {
+      "level": "COURSE",
+      "seed": 2618002,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.03956605108352484,
+      "yawrate_RMSE_rad_s": 0.03347644008722794,
+      "saturation_fraction": 0.29184615384615387
+    },
+    {
+      "level": "COURSE",
+      "seed": 2618003,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": false,
+      "velocity_RMSE_m_s": 0.04023556382084122,
+      "yawrate_RMSE_rad_s": 0.039419029616042704,
+      "saturation_fraction": 0.3087692307692308
+    },
+    {
+      "level": "BUMPS",
+      "seed": 2618003,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.03968542552336325,
+      "yawrate_RMSE_rad_s": 0.03884784637153214,
+      "saturation_fraction": 0.3183846153846154
+    },
+    {
+      "level": "SLOPES",
+      "seed": 2618002,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.03919528817657912,
+      "yawrate_RMSE_rad_s": 0.04428381012945563,
+      "saturation_fraction": 0.3363846153846154
+    },
+    {
+      "level": "COURSE",
+      "seed": 2618001,
+      "geometric_route_success": false,
+      "legacy_velocity_yaw_quality_success": false,
+      "velocity_RMSE_m_s": 0.03907317551516788,
+      "yawrate_RMSE_rad_s": 0.02037779160272733,
+      "saturation_fraction": 0.054170073589533935
+    },
+    {
+      "level": "FLAT",
+      "seed": 2618001,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.03632760577469738,
+      "yawrate_RMSE_rad_s": 0.046921827151521794,
+      "saturation_fraction": 0.31584615384615383
+    },
+    {
+      "level": "RANDOM",
+      "seed": 2618003,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.03777162979100664,
+      "yawrate_RMSE_rad_s": 0.06042316856352108,
+      "saturation_fraction": 0.3616923076923077
+    },
+    {
+      "level": "RANDOM",
+      "seed": 2618002,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.03882881275599023,
+      "yawrate_RMSE_rad_s": 0.06489788878174697,
+      "saturation_fraction": 0.35307692307692307
+    },
+    {
+      "level": "FLAT",
+      "seed": 2618003,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.03624948238763896,
+      "yawrate_RMSE_rad_s": 0.04635433662774435,
+      "saturation_fraction": 0.3097692307692308
+    },
+    {
+      "level": "MILD",
+      "seed": 2618001,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.03796676550363908,
+      "yawrate_RMSE_rad_s": 0.041286365109851585,
+      "saturation_fraction": 0.29953846153846153
+    },
+    {
+      "level": "BUMPS",
+      "seed": 2618002,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": false,
+      "velocity_RMSE_m_s": 0.04020783193668845,
+      "yawrate_RMSE_rad_s": 0.05678449853856472,
+      "saturation_fraction": 0.3596923076923077
+    },
+    {
+      "level": "BUMPS",
+      "seed": 2618001,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.03920728283349062,
+      "yawrate_RMSE_rad_s": 0.06056366246341747,
+      "saturation_fraction": 0.39376923076923076
+    },
+    {
+      "level": "RANDOM",
+      "seed": 2618001,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.037615952593334195,
+      "yawrate_RMSE_rad_s": 0.05474727149763316,
+      "saturation_fraction": 0.3557692307692308
+    },
+    {
+      "level": "SLOPES",
+      "seed": 2618003,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.03883348686897827,
+      "yawrate_RMSE_rad_s": 0.040565419098854735,
+      "saturation_fraction": 0.3222307692307692
+    },
+    {
+      "level": "SLOPES",
+      "seed": 2618001,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.03864973446729652,
+      "yawrate_RMSE_rad_s": 0.04523820746413668,
+      "saturation_fraction": 0.3733076923076923
+    },
+    {
+      "level": "FLAT",
+      "seed": 2618002,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.03868965076786314,
+      "yawrate_RMSE_rad_s": 0.06185036199878124,
+      "saturation_fraction": 0.35346153846153844
+    },
+    {
+      "level": "MILD",
+      "seed": 2618002,
+      "geometric_route_success": true,
+      "legacy_velocity_yaw_quality_success": true,
+      "velocity_RMSE_m_s": 0.038010475442897464,
+      "yawrate_RMSE_rad_s": 0.051165273677502426,
+      "saturation_fraction": 0.334
+    }
+  ]
+}

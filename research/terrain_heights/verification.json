@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "full_duration_runs": 24,
+  "pilot_runs": 4,
+  "native_steps": 366000,
+  "training_steps": 0,
+  "source_files_unchanged": 929,
+  "world_geometry_is_normalized": true,
+  "max_collision_height_m": 0.019947961864811566,
+  "verification_physics_steps": 0,
+  "original_fulltask_passes": 0
+}

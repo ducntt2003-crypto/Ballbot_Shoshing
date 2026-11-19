@@ -1,0 +1,37 @@
+test_O2_history_shapes_and_causal_reset (inherited_ResearchTests.ResearchTests) ... ok
+test_ROM_domain_honest_failure_not_clamp (inherited_ResearchTests.ResearchTests) ... ok
+test_invalid_fluid_parameters_rejected (inherited_ResearchTests.ResearchTests) ... ok
+test_mass_single_moving_body_two_coordinates (inherited_ResearchTests.ResearchTests) ... ok
+test_modal_mass_frequency_and_fill_domain (inherited_ResearchTests.ResearchTests) ... ok
+test_motor_action_sign_and_bounds (inherited_ResearchTests.ResearchTests) ... ok
+test_native_passive_joint_equations (inherited_ResearchTests.ResearchTests) ... ok
+test_observation_has_no_instantaneous_hidden_fluid_leak (inherited_ResearchTests.ResearchTests) ... ok
+test_published_internal_validation_artifacts (inherited_ResearchTests.ResearchTests) ... ok
+test_reset_replay_exact (inherited_ResearchTests.ResearchTests) ... ok
+test_rigid_and_liquid_reference_COM_match (inherited_ResearchTests.ResearchTests) ... ok
+test_static_tilt_equilibrium_and_gravity_once (inherited_ResearchTests.ResearchTests) ... ok
+test_capsule_sphere_distance_matches_rotated_native_contacts (inherited_ContactTests.ContactTests) ... ok
+test_force_frames_virtual_work_and_anisotropic_axes (inherited_ContactTests.ContactTests) ... ok
+test_diagnostic_calls_do_not_mutate_state_or_warmstart (inherited_ContactTests.ContactTests) ... ok
+test_positive_negative_motor_generalized_torque (inherited_ContactTests.ContactTests) ... ok
+test_reset_reproducible_and_default_contact_parameters (inherited_ContactTests.ContactTests) ... ok
+test_checkpoint (test_release.ReleaseTests) ... ok
+test_command_bounds (test_release.ReleaseTests) ... ok
+test_cross_controller_physics (test_release.ReleaseTests) ... ok
+test_key_release_and_focus (test_release.ReleaseTests) ... ok
+test_native_replay_and_initial_match (test_release.ReleaseTests) ... ok
+test_opposite_keys (test_release.ReleaseTests) ... ok
+test_pause_reset_exit (test_release.ReleaseTests) ... ok
+test_playground_geometry (test_release.ReleaseTests) ... ok
+test_recovery_censoring (test_release.ReleaseTests) ... ok
+test_release_neutral (test_release.ReleaseTests) ... ok
+test_space (test_release.ReleaseTests) ... ok
+test_turn_heading (test_release.ReleaseTests) ... ok
+test_heightfield_normalization_preserves_world_surface (test_release.TerrainRepresentationTests) ... ok
+test_original_and_normalized_short_state_agreement (test_release.TerrainRepresentationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.385s
+
+OK
+ESSENTIAL_TEST_RECEIPT {"passed": true, "tests": 31, "failures": 0, "errors": 0, "native_steps": 37, "wall_s": 1.553974186999767, "command": "python -B scripts/test_essential.py"}

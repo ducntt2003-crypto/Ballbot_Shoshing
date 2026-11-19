@@ -1,0 +1,30 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[a4paper,margin=18mm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,url,hyperref}
+\usepackage[T1]{fontenc}
+\title{SloshBot-RL: Figure-Eight Controller Comparison and Commanded Navigation with a Modal Liquid Payload}
+\author{OpenBallBot-RL project\\Author names and affiliations to be supplied by the project owner}
+\date{Research draft, 16 November 2026}
+\newcommand{\claim}[1]{\textsuperscript{\scriptsize[#1]}}
+\begin{document}
+\maketitle
+\input{sections/abstract}
+\noindent\textbf{Keywords:} BallBot; modal sloshing; trajectory tracking; contact simulation; privileged control; residual reinforcement learning.
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/model}
+\input{sections/control}
+\input{sections/setup}
+\input{sections/parallel_method}
+\input{sections/results}
+\input{sections/parallel_results}
+\input{sections/two_experiments}
+\input{sections/terrain_liquid_upgrade}
+\input{sections/discussion}
+\input{sections/limitations}
+\input{sections/conclusion}
+\bibliographystyle{plain}
+\bibliography{references}
+\appendix
+\input{appendices/reproducibility}
+\end{document}

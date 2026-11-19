@@ -1,0 +1,12 @@
+{
+  "MuJoCo_native_steps": 238619,
+  "route_and_pilot_steps": 236785,
+  "GUI_steps": 1760,
+  "test_steps": 74,
+  "SPH_native_steps": 1600,
+  "new_training_transitions": 0,
+  "terrain_native_wall_s": 330.87652013499974,
+  "registered_MuJoCo_step_cap": 300000,
+  "registered_terrain_wall_s": 1000,
+  "offline_contact_queries": 468
+}

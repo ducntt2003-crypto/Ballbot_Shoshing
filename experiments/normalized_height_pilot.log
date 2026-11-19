@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/duc/OpenBallBot-RL/public_releases/SloshBot-RL_20261116_v1/sloshbot/experiment.py", line 62, in <module>
+    if __name__=='__main__':main()
+  File "/home/duc/OpenBallBot-RL/public_releases/SloshBot-RL_20261116_v1/sloshbot/experiment.py", line 61, in main
+    p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--controller',default='V4',choices=['V2','V3','V2_FFv1','V3_FFv1','V4','PPO']);p.add_argument('--seed',type=int,default=2616001);p.add_argument('--terrain-seed',type=int,default=2617001);p.add_argument('--duration',type=float,default=30);p.add_argument('--script');p.add_argument('--terrain',choices=['flat','benchmark','playground'],default='playground');p.add_argument('--wall-s',type=float,default=90);p.add_argument('--modal-feedback',action='store_true');a=p.parse_args();run(out=a.output,controller=a.controller,seed=a.seed,terrain_seed=a.terrain_seed,duration=a.duration,script=a.script,terrain=a.terrain,wall_s=a.wall_s,modal_feedback=a.modal_feedback)
+  File "/home/duc/OpenBallBot-RL/public_releases/SloshBot-RL_20261116_v1/sloshbot/experiment.py", line 25, in run
+    env=TeleopEnv(terrain=terrain,modal_feedback=modal_feedback,terrain_seed=terrain_seed,duration=duration,capture=True) if teleop else FigureEnv(controller=controller,terrain_seed=terrain_seed,duration=duration,capture=True)
+  File "/home/duc/OpenBallBot-RL/public_releases/SloshBot-RL_20261116_v1/sloshbot/runtime.py", line 87, in __init__
+    assert self.height_representation_error_m<1e-17
+AssertionError

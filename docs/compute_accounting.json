@@ -1,0 +1,53 @@
+{
+  "new_native_evaluation_steps": 165472,
+  "GUI_native_steps": 2500,
+  "initial_corrected_release_tests_native_steps": 10,
+  "essential_invocations": [
+    {
+      "log": "essential_tests_complete.log",
+      "passed": true,
+      "tests": 29,
+      "failures": 0,
+      "errors": 0,
+      "native_steps": 37,
+      "wall_s": 1.590297131999705,
+      "command": "python -B scripts/test_essential.py"
+    },
+    {
+      "log": "essential_tests_final_float32.log",
+      "passed": true,
+      "tests": 31,
+      "failures": 0,
+      "errors": 0,
+      "native_steps": 37,
+      "wall_s": 1.553974186999767,
+      "command": "python -B scripts/test_essential.py"
+    },
+    {
+      "log": "essential_tests.log",
+      "passed": false,
+      "tests": 13,
+      "failures": 0,
+      "errors": 1,
+      "native_steps": 10,
+      "wall_s": 1.9067703519999668,
+      "command": "python -B scripts/test_essential.py"
+    },
+    {
+      "log": "essential_tests_final.log",
+      "passed": false,
+      "tests": 31,
+      "failures": 1,
+      "errors": 1,
+      "native_steps": 37,
+      "wall_s": 1.5843361830002323,
+      "command": "python -B scripts/test_essential.py"
+    }
+  ],
+  "new_training_transitions": 0,
+  "reused_native_steps_not_new": 90000,
+  "measured_evaluation_wall_s_excluding_some_process_startup": 193.97152285699985,
+  "wall_ceiling_native_s": 1500,
+  "native_step_ceiling": 400000,
+  "new_native_steps_total": 168103
+}

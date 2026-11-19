@@ -1,0 +1,28 @@
+{
+  "scope": "Clopper-Pearson intervals conditional on independent identically distributed trial assumptions. Three fixed contexts and one PPO lineage do not establish population robustness or independent-training uncertainty. Diagnostic gate censoring prevents pooling modal trial rates as unbiased replication.",
+  "figure8_each_controller": {
+    "k": 0,
+    "n": 3,
+    "CP95": [
+      0.0,
+      0.7075982261787133
+    ]
+  },
+  "baseline_standard": {
+    "k": 2,
+    "n": 3,
+    "CP95": [
+      0.09429932405024609,
+      0.9915962413403874
+    ]
+  },
+  "baseline_extended_route": {
+    "k": 3,
+    "n": 3,
+    "CP95": [
+      0.2924017738212866,
+      1.0
+    ]
+  },
+  "modal_standard": "1/2 attempted; third and traversal gated off; no unbiased success-rate claim"
+}

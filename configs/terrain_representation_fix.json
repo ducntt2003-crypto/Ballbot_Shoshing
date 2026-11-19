@@ -1,0 +1,8 @@
+{
+  "purpose": "Normalize new playground hfield data to [0,1], recompile temporary model AABBs, retain physical world heights, original mass/inertia/contact law. Original benchmark unaffected.",
+  "source_before_sha256": "a404f3a052c32ff41afe8e1edc6a54bc91ed1e889fe263a09fae6ed6a6f77079",
+  "source_after_sha256": "b67f1e4e581bcea44b99ce5f047bcb34d5611d55cd7e1b1b9a3f7624ef578a74",
+  "source_before_snapshot": "docs/pre_height_normalization_runtime.py",
+  "old_raw_maximum": 1.1266335815968984,
+  "validation": "New short pilot and GUI smoke only; existing completed trials stay labeled pre-fix and are not rerun. Raised features were not traversed by old trials."
+}

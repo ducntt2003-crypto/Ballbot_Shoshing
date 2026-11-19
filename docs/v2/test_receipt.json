@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "tests": 41,
+  "failures": 0,
+  "errors": 0,
+  "native_steps": 37,
+  "wall_s": 2.8842523020002773,
+  "command": "python -B scripts/test_essential.py"
+}

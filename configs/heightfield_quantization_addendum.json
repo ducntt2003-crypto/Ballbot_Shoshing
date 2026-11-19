@@ -1,0 +1,7 @@
+{
+  "reason": "MuJoCo hfield_data is float32, so the initial1e-17 reconstruction tolerance was invalid. Constructor stopped before native integration.",
+  "bound": "machine epsilon of hfield_data dtype times physical height range; not a relaxed physics/safety criterion",
+  "source_before_snapshot": "docs/height_normalization_initial_runtime.py",
+  "source_before_sha256": "b67f1e4e581bcea44b99ce5f047bcb34d5611d55cd7e1b1b9a3f7624ef578a74",
+  "source_after_sha256": "59c6d5841eaf62b55e8f0334d9c8a7081f671bad302e802f4bfdb65a1a8e8567"
+}

@@ -1,0 +1,105 @@
+{
+  "videos": [
+    {
+      "video": "upgrade/media/mild.mp4",
+      "source": "upgrade/results/MILD_2618001",
+      "frames": 521,
+      "fps": 20,
+      "last_recorded_s": 25.99999999999647,
+      "native_stop_s": 25.99999999999647,
+      "terminal_record_available": true,
+      "native_steps_generated": 0,
+      "view": "world",
+      "surface_peak_T_m": 0.04029197012998585,
+      "physically_valid": true
+    },
+    {
+      "video": "upgrade/media/bumps.mp4",
+      "source": "upgrade/results/BUMPS_2618001",
+      "frames": 521,
+      "fps": 20,
+      "last_recorded_s": 25.99999999999647,
+      "native_stop_s": 25.99999999999647,
+      "terminal_record_available": true,
+      "native_steps_generated": 0,
+      "view": "world",
+      "surface_peak_T_m": 0.03965604035072209,
+      "physically_valid": true
+    },
+    {
+      "video": "upgrade/media/liquid.mp4",
+      "source": "upgrade/results/BUMPS_2618001",
+      "frames": 521,
+      "fps": 20,
+      "last_recorded_s": 25.99999999999647,
+      "native_stop_s": 25.99999999999647,
+      "terminal_record_available": true,
+      "native_steps_generated": 0,
+      "view": "liquid",
+      "surface_peak_T_m": 0.03965604035072209,
+      "physically_valid": true
+    },
+    {
+      "video": "upgrade/media/course_failure.mp4",
+      "source": "upgrade/results/COURSE_2618001",
+      "frames": 393,
+      "fps": 20,
+      "last_recorded_s": 19.568000000000033,
+      "native_stop_s": 19.570000000000032,
+      "terminal_record_available": true,
+      "native_steps_generated": 0,
+      "view": "world",
+      "surface_peak_T_m": 0.0414067587636846,
+      "physically_valid": false
+    }
+  ],
+  "gifs": [
+    {
+      "gif": "upgrade/media/mild_rough.gif",
+      "source": "upgrade/media/mild.mp4",
+      "start_s": 0,
+      "end_s": null,
+      "bytes": 2079869,
+      "frames": 131,
+      "caption": "Recorded high-level keyboard script, not a human driving experiment. ROM surface visualization only."
+    },
+    {
+      "gif": "upgrade/media/smooth_bumps.gif",
+      "source": "upgrade/media/bumps.mp4",
+      "start_s": 0,
+      "end_s": null,
+      "bytes": 2061287,
+      "frames": 131,
+      "caption": "Recorded high-level keyboard script, not a human driving experiment. ROM surface visualization only."
+    },
+    {
+      "gif": "upgrade/media/keyboard_live_trail.gif",
+      "source": "upgrade/media/bumps.mp4",
+      "start_s": 0,
+      "end_s": null,
+      "bytes": 2061287,
+      "frames": 131,
+      "caption": "Recorded high-level keyboard script, not a human driving experiment. ROM surface visualization only."
+    },
+    {
+      "gif": "upgrade/media/liquid_acceleration_braking.gif",
+      "source": "upgrade/media/liquid.mp4",
+      "start_s": 1,
+      "end_s": 18,
+      "bytes": 2634645,
+      "frames": 86,
+      "caption": "Recorded high-level keyboard script, not a human driving experiment. ROM surface visualization only."
+    },
+    {
+      "gif": "upgrade/media/turning_with_liquid.gif",
+      "source": "upgrade/media/liquid.mp4",
+      "start_s": 17,
+      "end_s": 24,
+      "bytes": 1078768,
+      "frames": 36,
+      "caption": "Recorded high-level keyboard script, not a human driving experiment. ROM surface visualization only."
+    }
+  ],
+  "SPH_comparison_GIF": "NOT_GENERATED_STATIC_GATE_FAILED",
+  "surface_not_independently_validated": true
+}

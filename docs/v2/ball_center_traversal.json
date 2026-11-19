@@ -1,0 +1,53 @@
+[
+  {
+    "level": "BUMPS",
+    "seed": 2618001,
+    "sphere_radius_m": 0.09,
+    "ball_center_displacement_m": 0.7175204300272217,
+    "ball_center_elevation_range_m": 0.005623379965582459,
+    "surface_height_encountered_range_m": [
+      0.0,
+      0.001790834759088454
+    ],
+    "ball_center_z_range_m": [
+      0.08438972510556711,
+      0.09001310507114957
+    ],
+    "actual_progress_beyond_obstacle": true,
+    "scope": "Actual sphere centre reconstructed from native free-body quaternion and geom offset, no integration. Body-origin XYZ metrics stored separately."
+  },
+  {
+    "level": "SLOPES",
+    "seed": 2618001,
+    "sphere_radius_m": 0.09,
+    "ball_center_displacement_m": 0.7096495642162178,
+    "ball_center_elevation_range_m": 0.005623379965582459,
+    "surface_height_encountered_range_m": [
+      0.0,
+      0.0018000000854954123
+    ],
+    "ball_center_z_range_m": [
+      0.08438972510556711,
+      0.09001310507114957
+    ],
+    "actual_progress_beyond_obstacle": true,
+    "scope": "Actual sphere centre reconstructed from native free-body quaternion and geom offset, no integration. Body-origin XYZ metrics stored separately."
+  },
+  {
+    "level": "COURSE",
+    "seed": 2618001,
+    "sphere_radius_m": 0.09,
+    "ball_center_displacement_m": 0.6583643401246262,
+    "ball_center_elevation_range_m": 0.005623379965582459,
+    "surface_height_encountered_range_m": [
+      0.0,
+      0.0012000000569969416
+    ],
+    "ball_center_z_range_m": [
+      0.08438972510556711,
+      0.09001310507114957
+    ],
+    "actual_progress_beyond_obstacle": false,
+    "scope": "Actual sphere centre reconstructed from native free-body quaternion and geom offset, no integration. Body-origin XYZ metrics stored separately."
+  }
+]

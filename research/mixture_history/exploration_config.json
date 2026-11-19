@@ -1,0 +1,56 @@
+{
+  "id": "TRACK8Y_STRUCTURED_RESIDUAL_EXPLORATION_V1",
+  "method": "Fixed symmetric7componentGaussianmixture, independent samples10ms",
+  "weights": [
+    0.7,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05,
+    0.05
+  ],
+  "offsets": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0.5,
+      0,
+      0
+    ],
+    [
+      -0.5,
+      0,
+      0
+    ],
+    [
+      0,
+      0.5,
+      0
+    ],
+    [
+      0,
+      -0.5,
+      0
+    ],
+    [
+      0,
+      0,
+      0.5
+    ],
+    [
+      0,
+      0,
+      -0.5
+    ]
+  ],
+  "entropy_antithetic_samples_per_component": 32,
+  "entropy_private_seed": 2277771,
+  "entropy_coefficient": 0.0,
+  "no_temporal_state": true,
+  "deterministic_action": "centralnetworkmean",
+  "confound": "Mixture increasesmarginalvarianceandmultimodality together; one explorationfamilychange, NOTisolatedvariancevsgeometryeffect."
+}

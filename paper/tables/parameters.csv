@@ -1,0 +1,12 @@
+Parameter,Value,Unit
+Loaded model mass,4.73744693,kg
+Ball radius,.09,m
+Liquid volume,.0005,m3
+Liquid mass,0.499000,kg
+Tank inner radius,.07,m
+Liquid depth,0.03248060,m
+Moving modal mass,0.33888497,kg
+Modal angular frequency,13.37524111,rad/s
+Modal damping ratio,.02 (assumed),1
+Native step / base / actor,.002 / .002 / .010,s
+Motor hard limits,-10 to +10,Nm

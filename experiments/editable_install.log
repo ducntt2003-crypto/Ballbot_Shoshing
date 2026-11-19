@@ -1,0 +1,16 @@
+Obtaining file:///home/duc/OpenBallBot-RL/public_releases/SloshBot-RL_20261116_v1
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: sloshbot-rl
+  Building editable for sloshbot-rl (pyproject.toml): started
+  Building editable for sloshbot-rl (pyproject.toml): finished with status 'done'
+  Created wheel for sloshbot-rl: filename=sloshbot_rl-0.1.0-0.editable-py3-none-any.whl size=11380 sha256=794edf4298b744ebaa81c83a20d0d37e5a66d28d97e8329ebdb8888c90d60270
+  Stored in directory: /tmp/pip-ephem-wheel-cache-4b1wkoqq/wheels/a6/fc/2c/8b3c252d6aca88ea9b6890a13a53f5f8b27af77dc70d2de66b
+Successfully built sloshbot-rl
+Installing collected packages: sloshbot-rl
+Successfully installed sloshbot-rl-0.1.0
+
+[notice] A new release of pip is available: 24.3.1 -> 26.3
+[notice] To update, run: /home/duc/OpenBallBot-RL/public_releases/SloshBot-RL_20261116_v1/../../.venv/bin/python -m pip install --upgrade pip

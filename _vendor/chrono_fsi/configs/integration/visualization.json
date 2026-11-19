@@ -1,0 +1,5 @@
+{
+  "method": "offline MuJoCo rendering",
+  "particles": "actual Chrono snapshots same time",
+  "max_rendered_particles": 7784
+}

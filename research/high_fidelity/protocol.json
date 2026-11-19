@@ -1,0 +1,30 @@
+{
+  "gpu_available": true,
+  "device": "RTX4090Laptop",
+  "chrono": "10.0.0",
+  "commit": "9faf13dd8f1128dd75ed233a9627027b0422c3f7",
+  "binary_sha256": "73b81b0445476a72030a21deff83fdc628aec750f6d3f5c61942c575e3b55fd4",
+  "source_sha256": "1a09448459d84df1ef4fa7a4242aca207db9e90a3cb4293f64673813d4e55e61",
+  "cases": [
+    "dx8_dt50",
+    "dx6_dt50",
+    "dx6_dt25"
+  ],
+  "independent_container_only": true,
+  "duration_s": 0.02,
+  "wall_per_run_s": 60,
+  "nominal_R_m": 0.07,
+  "nominal_volume_m3": 0.0005,
+  "screen_gates": {
+    "rms_relative_velocity_max_m_s": 0.005,
+    "pressure_RMSE_max_Pa": 31.8,
+    "relative_density_max": 0.01,
+    "COM_drift_max_fraction_dx": 0.1,
+    "relative_wall_weight_defect_max": 0.05,
+    "mass_relative_drift_max": 1e-12,
+    "escaped": 0
+  },
+  "motion_cases_open_only_if_static_gate_passes": true,
+  "resolution_scope": "two coarse spacings; same50us dt and finest25us temporal pair; not an asymptotic convergence proof",
+  "all_safety_limits_inherited": true
+}

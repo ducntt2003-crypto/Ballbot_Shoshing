@@ -1,0 +1,10 @@
+{
+  "log": "essential_tests_final_float32.log",
+  "passed": true,
+  "tests": 31,
+  "failures": 0,
+  "errors": 0,
+  "native_steps": 37,
+  "wall_s": 1.553974186999767,
+  "command": "python -B scripts/test_essential.py"
+}

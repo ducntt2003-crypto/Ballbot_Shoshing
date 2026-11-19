@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "paths": 82602,
+  "mismatches": [],
+  "wall_s": 88.01958946400009,
+  "protocol_and_post_io_fix_core_unchanged": true,
+  "planned_vs_actual_seed_deviation_disclosed": true
+}

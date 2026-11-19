@@ -1,0 +1,17 @@
+{
+  "root": "/home/duc/OpenBallBot-RL/public_releases/SloshBot-RL_research_20261119",
+  "versions": {
+    "mujoco": "3.3.2",
+    "torch": "2.7.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "stable-baselines3": "2.6.0",
+    "gymnasium": "1.1.1",
+    "glfw": "2.10.2",
+    "Pillow": "11.2.1",
+    "opencv-python": "4.11.0.86"
+  },
+  "compiler": "/usr/bin/cc",
+  "checkpoint_present": true,
+  "notes": "No native physics steps; plugins are process-local and do not modify engine binaries."
+}
